@@ -1,3 +1,4 @@
+/* Colors: */
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
 .uk-navbar-toggle {
@@ -6,4 +7,20 @@
 
 .uk-navbar-nav > li > a {
   text-transform: inherit;
+}
+
+.news-ticker .tm-heading {
+  position: relative;
+  background-color: #f20764;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.news-ticker .tm-heading:after {
+  content: "";
+  right: -20px;
+  border-left-color: #f20764 !important;
+  position: absolute;
+  border: 10px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
 }

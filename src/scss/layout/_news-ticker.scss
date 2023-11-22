@@ -1,0 +1,18 @@
+.news-ticker {
+  .tm-heading {
+    position: relative;
+    background-color: $color-danger;
+    color: $color-light;
+    text-transform: uppercase;
+  }
+
+  .tm-heading:after {
+    content: "";
+    right: -20px;
+    border-left-color: $color-danger !important;
+    position: absolute;
+    border: 10px solid transparent;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
