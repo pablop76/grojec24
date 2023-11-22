@@ -1,6 +1,6 @@
-# strona ElDAM
+# strona Grojec24.net
 
-![Agrotax](./grojec24.jpg)
+![Grójec24](./grojec24.jpg)
 
 ## użyte technologie.
 
