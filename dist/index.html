@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grójec 24</title>
-    <link rel="icon" 
-      type="image/png" 
-      href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Unna:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/css/uikit.min.css" />
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<!-- kolejna sekcja -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body></body>
+</html>
+
+<!-- sekcja topbar -->
 <nav class="uk-navbar-container uk-navbar-transparent uk-padding-small">
   <div class="uk-container uk-container-large">
     <div data-uk-navbar>
@@ -87,7 +90,7 @@
   </div>
 </nav>
 
-<!-- kolejna sekcja -->
+<!-- sekcja mainbar -->
 <div class="uk-text-center">
   <a class="uk-logo" href="/">
     <img src="https://placehold.co/414x106?text=logo" width="414" height="106" alt="" />
@@ -132,7 +135,7 @@
 </nav>
 <hr class="uk-container uk-container-large" />
 
-<!-- kolejna sekcja -->
+<!-- sekcja banner -->
 <div class="uk-section">
   <div class="uk-container uk-container-large">
     <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
@@ -141,7 +144,7 @@
   </div>
 </div>
 
-<!-- kolejna sekcja -->
+<!-- sekcja szybkie wiadomości-->
 <div class="uk-section">
   <div class="uk-container uk-container-large">
     <div class="news-ticker el-news-inner uk-child-width-expand uk-grid-collapse uk-flex-middle uk-card uk-card-default uk-card-small uk-grid" uk-grid="">
@@ -186,7 +189,380 @@
     </div>
   </div>
 </div>
- <div class="uk-section uk-background-cover" style="background-image: url('https://placehold.co/1920x1080/000/222');">
+
+<!--  sekcja pilne -->
+<div class="uk-section">
+  <div class="uk-container uk-container-large">
+    <div data-uk-grid>
+      <div class="uk-width-3-4@m">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <span class="uk-label uk-label-danger">Pilne</span>
+              <p class="uk-text-uppercase">Aktualności</p>
+              <h2 class="uk-card-title uk-margin-remove-top">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+              <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-expand@m">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; min-height: 450; max-height: 600; animation: push">
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Możliwość ustawienia wysokości</h3>
+                <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+              </div>
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+                <p class="uk-margin-remove">Aktualnie brak</p>
+              </div>
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+                <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+              </div>
+            </li>
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  sekcja trzech artykułów obok siebie -->
+<div class="uk-section">
+  <div class="uk-container uk-container-large">
+    <div class="uk-child-width-expand@s" data-uk-grid>
+      <div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+          <div class="uk-card-media-left uk-width-2-5@s uk-cover-container">
+            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+          </div>
+          <div class="uk-width-3-5@s">
+            <div class="uk-card-body">
+              <p>Aktualności</p>
+              <h3 class="uk-card-title uk-heading-smaller uk-margin-remove-top">Nietypowa interwencja policji pod Grójcem!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+          <div class="uk-card-media-left uk-width-2-5@s uk-cover-container">
+            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+          </div>
+          <div class="uk-width-3-5@s">
+            <div class="uk-card-body">
+              <p>Kategoria</p>
+              <h3 class="uk-card-title uk-heading-smaller uk-margin-remove-top">Trzech Etiopczyków ukryło się w naczepie tira</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+          <div class="uk-card-media-left uk-width-2-5@s uk-cover-container">
+            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+          </div>
+          <div class="uk-width-3-5@s">
+            <div class="uk-card-body">
+              <p>Kategoria</p>
+              <h3 class="uk-card-title uk-heading-smaller uk-margin-remove-top">Markiza Malta - kompaktowe rozwiązanie dla każdego tarasu</h3>
+              <p class="uk-text-meta">Artykuł Sponsorowany</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sekcja banner -->
+<div class="uk-section">
+  <div class="uk-container uk-container-large">
+    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
+      <h1>miejsce na reklamę</h1>
+    </div>
+  </div>
+</div>
+
+<!-- sekcja tab aktualności -->
+<div class="uk-section">
+  <div class="uk-container uk-container-large">
+    <h2 class="uk-heading-bullet">Aktualności</h2>
+    <ul uk-tab uk-switcher="connect: .switcher-container">
+      <li><a href="#">Grójec</a></li>
+      <li><a href="#">Powiat grójecki</a></li>
+      <li><a href="#">Samorząd</a></li>
+      <li><a href="#">Praca Grójec</a></li>
+      <li><a href="#">Policja</a></li>
+    </ul>
+    <div uk-grid>
+      <div class="uk-width-3-4@m">
+        <ul class="uk-switcher uk-margin switcher-container">
+          <li class="uk-animation-fade">
+            <div uk-grid>
+              <div class="uk-width-2-5@m">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Aktualności</p>
+                    <h3 class="uk-card-title uk-heading-smaller uk-margin-remove-top">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+                    <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-3-5@m">
+                <div uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body">
+                          <p>Kategoria</p>
+                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <p>Kategoria</p>
+                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-animation-fade">
+            <div uk-grid>
+              <div class="uk-width-2-5@m">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Aktualności</p>
+                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+                    <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-3-5@m">
+                <div uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body">
+                          <p>Kategoria</p>
+                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <p>Kategoria</p>
+                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-animation-fade">
+            <div uk-grid>
+              <div class="uk-width-2-5@m">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Aktualności</p>
+                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+                    <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-3-5@m">
+                <div uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body">
+                          <p>Kategoria</p>
+                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <p>Kategoria</p>
+                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-animation-fade">
+            <div uk-grid>
+              <div class="uk-width-2-5@m">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Aktualności</p>
+                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+                    <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-3-5@m">
+                <div uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body">
+                          <p>Kategoria</p>
+                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <p>Kategoria</p>
+                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-animation-fade">
+            <div uk-grid>
+              <div class="uk-width-2-5@m">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Aktualności</p>
+                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+                    <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-3-5@m">
+                <div uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body">
+                          <p>Kategoria</p>
+                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <p>Kategoria</p>
+                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-width-expand@m">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; min-height: 450; max-height: 600; animation: push">
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Możliwość ustawienia wysokości</h3>
+                <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+              </div>
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+                <p class="uk-margin-remove">Aktualnie brak</p>
+              </div>
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+                <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+              </div>
+            </li>
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  sekcja banner -->
+<div class="uk-section">
+  <div class="uk-container uk-container-large">
+    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
+      <h1>miejsce na reklamę</h1>
+    </div>
+  </div>
+</div>
+
+<!-- sekcja footer -->
+<div class="uk-section uk-background-cover" style="background-image: url('https://placehold.co/1920x1080/000/222');">
     <div class="uk-container uk-container-large">
         <div class="uk-grid-match" data-uk-grid>
             <div class="uk-width-2-5@m">
@@ -199,59 +575,65 @@
                 </div>
             </div>
             <div class="uk-width-3-5@m">
-                    <div class="uk-child-width-1-3@m " data-uk-grid>
-                        <div class="uk-card uk-card-body uk-light">
-                            <h3>Grojec24.net</h3>
-                            <ul class="uk-nav uk-nav-default">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Samorząd</a></li>
-                                        <li><a href="#">Policja</a></li>
-                                        <li><a href="#">Na Sygnale</a></li>
-                                        <li><a href="#">Grójecki Ośrodek Sportu</a></li>
-                                        <li><a href="#">Biblioteka w Grójcu</a></li>
-                                        <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
-                                        <li><a href="#">Historia i zabytki</a></li>
-                                        <li><a href="#">Kościół i religia</a></li>
-                                        <li><a href="#">Grójczanie i ich pasje</a></li>
-                                        <li><a href="#">Mazowsze Grójec</a></li>
-                                        <li><a href="#">MKS Grójec</a></li>
-                                        <li><a href="#">Nieruchomości Grójec</a></li>
-                                    </ul>
-                        </div>
-                        <div class="uk-card uk-card-body uk-light">
-                            <h3>Polecamy</h3>
-                                    <ul class="uk-nav uk-nav-default">
-                                        <li><a href="#">Aktualności</a></li>
-                                        <li><a href="#">Sport</a></li>
-                                        <li><a href="#">Kultura</a></li>
-                                        <li><a href="#">O Grójcu</a></li>
-                                        <li><a href="#">Po godzinach</a></li>
-                                        <li><a href="#">Grójec w obiektywie</a></li>
-                                        <li><a href="#">TVGrójec24</a></li>
-                                        <li><a href="#">Ogłoszenia</a></li>
-                                        <li><a href="#">Praca</a></li>
-                                        <li><a href="#">Alarm24</a></li>
-                                        <li><a href="#">Reklama</a></li>
-                                        <li><a href="#">Kontakt</a></li>
-                                    </ul>
-                        </div>
-                        <div class="uk-card uk-card-body uk-light">
-                            <h3>Informacje</h3>
-                                    <ul class="uk-nav uk-nav-default">
-                                        <li><a href="#">Grójec</a></li>
-                                        <li><a href="#">Powiat Grójecki</a></li>
-                                        <li><a href="#">Belsk Duży</a></li>
-                                        <li><a href="#">Błedów</a></li>
-                                        <li><a href="#">Chynów</a></li>
-                                        <li><a href="#">Goszczyn</a></li>
-                                        <li><a href="#">Jasieniec</a></li>
-                                        <li><a href="#">Mogielnica</a></li>
-                                        <li><a href="#">Nowe Miasto nad Pilicą</a></li>
-                                        <li><a href="#">Pniewy</a></li>
-                                        <li><a href="#">Warka</a></li>
-                                        <li><a href="#">Mazowsze</a></li>
-                                    </ul>
-                        </div>
+                    <div class="uk-child-width-1-3@m" data-uk-grid>
+<div>
+    <div class="uk-card uk-card-body uk-light">
+        <h3>Grojec24.net</h3>
+        <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Samorząd</a></li>
+                    <li><a href="#">Policja</a></li>
+                    <li><a href="#">Na Sygnale</a></li>
+                    <li><a href="#">Grójecki Ośrodek Sportu</a></li>
+                    <li><a href="#">Biblioteka w Grójcu</a></li>
+                    <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
+                    <li><a href="#">Historia i zabytki</a></li>
+                    <li><a href="#">Kościół i religia</a></li>
+                    <li><a href="#">Grójczanie i ich pasje</a></li>
+                    <li><a href="#">Mazowsze Grójec</a></li>
+                    <li><a href="#">MKS Grójec</a></li>
+                    <li><a href="#">Nieruchomości Grójec</a></li>
+                </ul>
+    </div>
+</div>
+<div>
+    <div class="uk-card uk-card-body uk-light">
+        <h3>Polecamy</h3>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#">Aktualności</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Kultura</a></li>
+                    <li><a href="#">O Grójcu</a></li>
+                    <li><a href="#">Po godzinach</a></li>
+                    <li><a href="#">Grójec w obiektywie</a></li>
+                    <li><a href="#">TVGrójec24</a></li>
+                    <li><a href="#">Ogłoszenia</a></li>
+                    <li><a href="#">Praca</a></li>
+                    <li><a href="#">Alarm24</a></li>
+                    <li><a href="#">Reklama</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+    </div>
+</div>
+<div>
+    <div class="uk-card uk-card-body uk-light">
+        <h3>Informacje</h3>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#">Grójec</a></li>
+                    <li><a href="#">Powiat Grójecki</a></li>
+                    <li><a href="#">Belsk Duży</a></li>
+                    <li><a href="#">Błedów</a></li>
+                    <li><a href="#">Chynów</a></li>
+                    <li><a href="#">Goszczyn</a></li>
+                    <li><a href="#">Jasieniec</a></li>
+                    <li><a href="#">Mogielnica</a></li>
+                    <li><a href="#">Nowe Miasto nad Pilicą</a></li>
+                    <li><a href="#">Pniewy</a></li>
+                    <li><a href="#">Warka</a></li>
+                    <li><a href="#">Mazowsze</a></li>
+                </ul>
+    </div>
+</div>
                     </div>
              </div>
         </div>

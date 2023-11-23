@@ -5,6 +5,33 @@
   min-height: 20px;
 }
 
+.uk-container-large {
+  max-width: 1440px;
+}
+
+.uk-heading-smaller {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unna", serif;
+  font-weight: 700;
+}
+
+.uk-label-danger {
+  background-color: #f20764;
+  letter-spacing: 3.3px;
+}
+
 .uk-navbar-nav > li > a {
   text-transform: inherit;
 }
