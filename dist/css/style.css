@@ -9,8 +9,10 @@
   max-width: 1440px;
 }
 
-.uk-heading-smaller {
-  font-size: 20px;
+hr {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -27,20 +29,83 @@ h6 {
   font-weight: 700;
 }
 
+.uk-heading-17 {
+  font-size: 17px;
+}
+.uk-heading-20 {
+  font-size: 20px;
+}
+.uk-heading-25 {
+  font-size: 20px;
+}
+
 .uk-label-danger {
   background-color: #f20764;
   letter-spacing: 3.3px;
 }
 
-.uk-navbar-nav > li > a {
-  text-transform: inherit;
+.uk-article-meta {
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #b1b1b1;
 }
 
+.uk-icon-link {
+  color: #b1b1b1;
+  text-decoration: none !important;
+}
+
+.navbar-top .uk-navbar-nav {
+  font-size: 0.6875rem;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  color: #2a81ac;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.uk-navbar-nav > li.uk-active > a:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 150%;
+  height: 3px;
+  bottom: -13px;
+  left: -25%;
+  background-color: #2a81ac;
+}
+
+.uk-navbar-nav > li > a {
+  text-transform: inherit;
+  font-size: 0.9375rem;
+}
+
+.navbar-container-sticky.uk-sticky.uk-active {
+  background-color: #fff;
+}
+.navbar-container-sticky.uk-sticky.uk-active .uk-logo {
+  transform: scale(0.7);
+  transition: all 0.5s ease-out;
+}
+
+.news-ticker {
+  background-color: #f3f3f3;
+}
+.news-ticker .tm-item {
+  font-size: 1.0625rem;
+}
 .news-ticker .tm-heading {
   position: relative;
   background-color: #f20764;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 20px 30px;
+  letter-spacing: 2.4px;
+}
+.news-ticker .tm-content.uk-panel {
+  padding: 17px;
+  color: #4c4c4c;
 }
 .news-ticker .tm-heading:after {
   content: "";
@@ -50,4 +115,19 @@ h6 {
   border: 10px solid transparent;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.uk-slidenav {
+  color: #2a81ac;
+}
+
+.uk-padding-smaller {
+  padding: 30px;
+}
+
+.uk-category-article {
+  color: #2a81ac;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
 }

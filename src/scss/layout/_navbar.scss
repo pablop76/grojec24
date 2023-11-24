@@ -1,0 +1,22 @@
+.navbar-top {
+  .uk-navbar-nav {
+    font-size: 0.6875rem;
+  }
+}
+.uk-navbar-nav {
+  & > li.uk-active > a {
+    color: $color-accent-2;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 150%;
+      height: 3px;
+      bottom: -13px;
+      left: -25%;
+      background-color: $color-accent-2;
+    }
+  }
+}

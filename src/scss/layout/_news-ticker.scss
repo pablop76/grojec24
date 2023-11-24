@@ -1,9 +1,21 @@
 .news-ticker {
+  background-color: $color-accent-1;
+  .tm-item {
+    font-size: 1.0625rem;
+  }
+
   .tm-heading {
     position: relative;
     background-color: $color-danger;
     color: $color-light;
     text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 20px 30px;
+    letter-spacing: 2.4px;
+  }
+  .tm-content.uk-panel {
+    padding: 17px;
+    color: $color-4c4c4c;
   }
 
   .tm-heading:after {
@@ -15,4 +27,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
+}
+.uk-slidenav {
+  color: $color-accent-2;
 }

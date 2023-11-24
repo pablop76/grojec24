@@ -1,21 +1,83 @@
 @@include('./particles/head.html',{ 'title':'Grójec 24' })
 <!-- sekcja topbar -->
-@@include('./particles/navbar.html')
-<!-- sekcja mainbar -->
-@@include('./particles/main-navbar.html')
-<!-- sekcja banner -->
-@@include('./particles/banner-horizontal.html')
-<!-- sekcja szybkie wiadomości-->
-@@include('./particles/news-ticker.html')
+<div class="navbar-container-sticky" uk-sticky="start: 200; animation: uk-animation-slide-top; media:@m">
+  @@include('./particles/navbar.html')
+  <!-- sekcja mainbar -->
+  @@include('./particles/main-navbar.html')
+</div>
+
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <!-- sekcja banner -->
+    @@include('./particles/banner-horizontal.html')
+  </div>
+</div>
+<hr />
+<div class="uk-section uk-padding-smaller">
+  <div class="uk-container uk-container-large">
+    <!-- sekcja szybkie wiadomości-->
+    @@include('./particles/news-ticker.html')
+  </div>
+</div>
+<hr />
 <!--  sekcja pilne -->
-@@include('./particles/pilne.html')
+<div class="uk-section uk-padding-remove">
+  <div class="uk-container uk-container-large">
+    <!--  sekcja pilne -->
+    @@include('./particles/pilne.html')
+  </div>
+</div>
+<hr />
 <!--  sekcja trzech artykułów obok siebie -->
-@@include('./particles/trzy-artykuly-obok-siebie.html')
+@@include('./particles/trzy-poziome-artykuly-obok-siebie.html')
 <!-- sekcja banner -->
-@@include('./particles/banner-horizontal.html')
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <!-- sekcja banner -->
+    @@include('./particles/banner-horizontal.html')
+  </div>
+</div>
+<!-- sekcja tytuł aktualności -->
+@@include('./particles/title-section.html',{'title':'Aktualności'})
 <!-- sekcja tab aktualności -->
-@@include('./particles/aktualnosci.html')
+@@include('./particles/tab-section.html')
 <!--  sekcja banner -->
-@@include('./particles/banner-horizontal.html')
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <!-- sekcja banner -->
+    @@include('./particles/banner-horizontal.html')
+  </div>
+</div>
+<!-- sekcja tytuł Sport -->
+@@include('./particles/title-section.html',{'title':'Sport'})
+<!-- sekcja tab sport -->
+@@include('./particles/tab-section.html')
+<!--  sekcja banner -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <!-- sekcja banner -->
+    @@include('./particles/banner-horizontal.html')
+  </div>
+</div>
+<!-- sekcja tytuł Kultura -->
+@@include('./particles/title-section.html',{'title':'Kultura'})
+<!-- sekcja tab kultura -->
+@@include('./particles/tab-section.html')
+<!-- sekcja tytuł Kultura -->
+@@include('./particles/title-section.html',{'title':'O grójcu'})
+<!-- sekcja tab O Grójcu -->
+@@include('./particles/tab-section-o-grojcu.html')
+<!-- sekcja tytuł Kultura -->
+@@include('./particles/title-section.html',{'title':'Grójec w obiektywie'})
+<!-- sekcja Slideshow -->
+@@include('./particles/slideshow.html')
+<!-- sekcja tytuł Po godzinach -->
+@@include('./particles/title-section.html',{'title':'Po godzinach'})
+<!-- sekcja tab Po godzinach -->
+@@include('./particles/tab-section-po-godzinach.html')
+<!-- sekcja tytuł Z regionu -->
+@@include('./particles/title-section.html',{'title':'Z regionu'})
+<!-- sekcja Z regionu -->
+@@include('./particles/section-z-regionu.html')
 <!-- sekcja footer -->
 @@include('./particles/footer.html')
