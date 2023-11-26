@@ -4,7 +4,17 @@
       <div class="uk-navbar-left uk-width-auto@m">
         <ul class="uk-navbar-nav uk-flex uk-flex-middle uk-text-uppercase">
           <li><a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a></li>
-          <li><a class="uk-search-toggle" href="#" data-uk-search-icon></a></li>
+          <li>
+            <a class="uk-search-toggle" href="#modal-full" data-uk-search-icon data-uk-toggle></a>
+            <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+              <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                  <button class="uk-modal-close-full" type="button" uk-close></button>
+                  <form class="uk-search uk-search-large">
+                      <input class="uk-search-input uk-text-center" type="search" placeholder="Szukaj..." aria-label="Search" autofocus>
+                  </form>
+              </div>
+          </div>
+          </li>
           <li>Środa</li>
           <li>|</li>
           <li><time datetime="2023-11-22T19:00">22 Listopada 2023</time></li>
