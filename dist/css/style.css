@@ -153,6 +153,12 @@ hr.divider-fat {
   fill: #939393;
 }
 
+.overlay-foto-video-icon div {
+  padding: 15px;
+  background-color: #062738;
+  margin-right: 2px;
+}
+
 #navbar {
   background-color: #f3f3f3;
 }
