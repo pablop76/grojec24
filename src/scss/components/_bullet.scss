@@ -1,0 +1,16 @@
+.uk-heading-bullet {
+  &::before {
+    height: calc(15px + 0.7em);
+    border-left: calc(15px + 0.1em) solid #e5e5e5;
+  }
+  &.uk-heading-bullet-lightblue {
+    &::before {
+      border-left: calc(15px + 0.1em) solid $color-lightblue;
+    }
+  }
+  &.uk-heading-bullet-only {
+    &::before {
+      border-left: calc(15px + 0.1em) solid $color-bullet-only;
+    }
+  }
+}

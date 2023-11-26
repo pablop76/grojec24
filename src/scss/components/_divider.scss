@@ -1,0 +1,8 @@
+hr {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  &.divider-fat {
+    border-top: 3px solid $color-divider-header;
+  }
+}

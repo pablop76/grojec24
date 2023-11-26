@@ -1,0 +1,20 @@
+.uk-tab {
+  & > .uk-active {
+    & > a {
+      color: $color-accent-2;
+      border-color: $color-accent-2;
+      border-bottom: 3px solid;
+    }
+  }
+  & > * {
+    & > a {
+      text-transform: none;
+      color: $color-navbar;
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  &::before {
+    bottom: 1px;
+  }
+}

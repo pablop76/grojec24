@@ -1,0 +1,23 @@
+#footer,#navbar{
+    svg {
+        fill: #fff;
+          &#facebook:hover {
+            fill: $color-accent-2;
+          }
+          &#instagram:hover {
+            fill: $color-instagram;
+          }
+          &#x:hover {
+            fill: $color-x;
+          }
+          &#youtube:hover {
+            fill: $color-youtube;
+          }
+      }
+}
+#navbar{
+  svg{
+    fill:$color-footer-navbar
+  }
+}
+

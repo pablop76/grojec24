@@ -1,0 +1,53 @@
+// @s	Only affects device widths of 640px and larger.
+@media screen and (min-width: 639.9px) {
+  .padding-remove-top-s {
+    padding-top: 0 !important;
+  }
+  .padding-remove-bottom-s {
+    padding-bottom: 0 !important;
+  }
+  .padding-remove-left-right-s {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .padding-remove-left-s {
+    padding-left: 0 !important;
+  }
+}
+
+.header-section-title-xl {
+  font-size: 40px;
+  line-height: 44px;
+}
+.header-article-title-l {
+  font-size: 35px;
+  line-height: 39px;
+}
+.header-article-title-sl {
+  font-size: 30px;
+  line-height: 33px;
+}
+.header-article-title-m {
+  font-size: 25px;
+  line-height: 28px;
+}
+.header-article-title-sm {
+  font-size: 20px;
+  line-height: 22px;
+}
+.header-article-title-s {
+  font-size: 17px;
+  line-height: 20px;
+}
+.visible-sticky {
+  display: none;
+}
+.uk-padding-smaller {
+  padding: 30px;
+}
+.uk-category-article {
+  color: $color-accent-2;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}

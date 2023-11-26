@@ -9,14 +9,9 @@
   max-width: 1440px;
 }
 
-hr {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 h1,
@@ -29,19 +24,89 @@ h6 {
   font-weight: 700;
 }
 
-.uk-heading-17 {
+@media screen and (min-width: 639.9px) {
+  .padding-remove-top-s {
+    padding-top: 0 !important;
+  }
+  .padding-remove-bottom-s {
+    padding-bottom: 0 !important;
+  }
+  .padding-remove-left-right-s {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .padding-remove-left-s {
+    padding-left: 0 !important;
+  }
+}
+.header-section-title-xl {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.header-article-title-l {
+  font-size: 35px;
+  line-height: 39px;
+}
+
+.header-article-title-sl {
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.header-article-title-m {
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.header-article-title-sm {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.header-article-title-s {
   font-size: 17px;
+  line-height: 20px;
 }
-.uk-heading-20 {
-  font-size: 20px;
+
+.visible-sticky {
+  display: none;
 }
-.uk-heading-25 {
-  font-size: 20px;
+
+.uk-padding-smaller {
+  padding: 30px;
+}
+
+.uk-category-article {
+  color: #2a81ac;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
 }
 
 .uk-label-danger {
   background-color: #f20764;
   letter-spacing: 3.3px;
+}
+
+hr {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr.divider-fat {
+  border-top: 3px solid #202020;
+}
+
+.uk-heading-bullet::before {
+  height: calc(15px + 0.7em);
+  border-left: calc(15px + 0.1em) solid #e5e5e5;
+}
+.uk-heading-bullet.uk-heading-bullet-lightblue::before {
+  border-left: calc(15px + 0.1em) solid #9ee6ff;
+}
+.uk-heading-bullet.uk-heading-bullet-only::before {
+  border-left: calc(15px + 0.1em) solid #a8b8bf;
 }
 
 .uk-article-meta {
@@ -53,6 +118,43 @@ h6 {
 .uk-icon-link {
   color: #b1b1b1;
   text-decoration: none !important;
+}
+
+.btn-all-articles {
+  margin-top: 20px;
+  color: #2a81ac;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  line-height: 23px;
+}
+
+.uk-list-arrow {
+  list-style-image: url("../images/arrow_list_item.svg");
+  padding-left: 10px;
+}
+
+#footer svg, #navbar svg {
+  fill: #fff;
+}
+#footer svg#facebook:hover, #navbar svg#facebook:hover {
+  fill: #2a81ac;
+}
+#footer svg#instagram:hover, #navbar svg#instagram:hover {
+  fill: #405de6;
+}
+#footer svg#x:hover, #navbar svg#x:hover {
+  fill: #1da1f2;
+}
+#footer svg#youtube:hover, #navbar svg#youtube:hover {
+  fill: #ff0000;
+}
+
+#navbar svg {
+  fill: #939393;
+}
+
+#navbar {
+  background-color: #f3f3f3;
 }
 
 .navbar-top .uk-navbar-nav {
@@ -78,14 +180,18 @@ h6 {
 .uk-navbar-nav > li > a {
   text-transform: inherit;
   font-size: 0.9375rem;
+  font-family: "Roboto", sans-serif;
+  color: #4c4c4c;
 }
 
 .navbar-container-sticky.uk-sticky.uk-active {
   background-color: #fff;
 }
 .navbar-container-sticky.uk-sticky.uk-active .uk-logo {
-  transform: scale(0.7);
-  transition: all 0.5s ease-out;
+  display: none;
+}
+.navbar-container-sticky.uk-sticky.uk-active .visible-sticky {
+  display: block;
 }
 
 .news-ticker {
@@ -121,13 +227,43 @@ h6 {
   color: #2a81ac;
 }
 
-.uk-padding-smaller {
-  padding: 30px;
+.slider a.uk-slidenav {
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 15px 20px;
+}
+.slider a.uk-slidenav.uk-icon {
+  color: #202020;
 }
 
-.uk-category-article {
+.uk-tab > .uk-active > a {
   color: #2a81ac;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 2.4px;
+  border-color: #2a81ac;
+  border-bottom: 3px solid;
+}
+.uk-tab > * > a {
+  text-transform: none;
+  color: #4c4c4c;
+  font-size: 15px;
+  padding: 10px;
+}
+.uk-tab::before {
+  bottom: 1px;
+}
+
+#footer {
+  background-color: #f3f3f3;
+  font-weight: 300;
+}
+#footer .uk-nav-default > li.uk-active > a {
+  font-weight: initial;
+  color: #2a81ac;
+}
+#footer .uk-nav > li > a {
+  padding: 0px 40px;
+  line-height: 23px;
+}
+#footer .copyright {
+  font-size: 12px;
+  color: #939393;
 }

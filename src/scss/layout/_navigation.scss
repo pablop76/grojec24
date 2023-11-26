@@ -1,12 +1,16 @@
 .uk-navbar-nav > li > a {
   text-transform: inherit;
   font-size: 0.9375rem;
+  font-family: "Roboto", sans-serif;
+  color: $color-navbar;
 }
 //lepka nawigacja
 .navbar-container-sticky.uk-sticky.uk-active {
   background-color: #fff;
   .uk-logo {
-    transform: scale(0.7);
-    transition: all 0.5s ease-out;
+    display: none;
+  }
+  .visible-sticky {
+    display: block;
   }
 }

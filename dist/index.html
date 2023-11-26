@@ -16,12 +16,11 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
-</html>
+  <body>
 
 <!-- sekcja topbar -->
 <div class="navbar-container-sticky" uk-sticky="start: 200; animation: uk-animation-slide-top; media:@m">
-  <nav class="navbar-top uk-navbar-container uk-navbar-transparent uk-padding-small">
+  <nav id="navbar" class="navbar-top uk-navbar-container uk-navbar-transparent uk-padding-small">
   <div class="uk-container uk-container-large">
     <div data-uk-navbar data-uk-grid>
       <div class="uk-navbar-left uk-width-auto@m">
@@ -67,23 +66,48 @@
           </div>
         </div>
       </div>
+      <div class="uk-navbar-center visible-sticky">
+        <a href="/"><img src="./images/logo-grojec24.png" width="200" height="46" alt="" /></a>
+      </div>
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
           <li>
-            <a href="#"><span data-uk-icon="facebook"></span></a>
-          </li>
-          <li>
-            <a href="#"><span data-uk-icon="instagram"></span></a>
-          </li>
-          <li>
             <a href="#"
-              ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="facebook">
+                <g id="Group_519" data-name="Group 519" transform="translate(-1529 -63)">
+                  <rect id="Rectangle_160" data-name="Rectangle 160" width="16" height="16" transform="translate(1529 63)" fill="none" />
+                  <path id="Path_2493" data-name="Path 2493" d="M1332.954,303.027l.386-2.514h-2.412v-1.632a1.257,1.257,0,0,1,1.417-1.359h1.1v-2.141a13.373,13.373,0,0,0-1.947-.17,3.07,3.07,0,0,0-3.286,3.384v1.917H1326v2.514h2.209v6.079a8.795,8.795,0,0,0,2.719,0v-6.079Z" transform="translate(207 -231.212)" />
+                </g></svg
             ></a>
           </li>
           <li>
-            <a href="#"><span data-uk-icon="youtube"></span></a>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="instagram">
+                <g id="Group_522" data-name="Group 522" transform="translate(-1554 -63)">
+                  <rect id="Rectangle_163" data-name="Rectangle 163" width="16" height="16" transform="translate(1554 63)" fill="none" />
+                  <path id="Path_2496" data-name="Path 2496" d="M-73.6,136.5c-1.9,0-2.14.008-2.886.042a5.286,5.286,0,0,0-1.7.313,3.4,3.4,0,0,0-1.241.78,3.356,3.356,0,0,0-.809,1.2,4.712,4.712,0,0,0-.325,1.636c-.032.719-.044.948-.044,2.783s.008,2.06.044,2.783a4.785,4.785,0,0,0,.325,1.636,3.257,3.257,0,0,0,.809,1.2,3.454,3.454,0,0,0,1.241.78,5.309,5.309,0,0,0,1.7.313c.745.034.983.042,2.886.042s2.136-.008,2.886-.042a5.337,5.337,0,0,0,1.7-.313,3.439,3.439,0,0,0,1.237-.78,3.357,3.357,0,0,0,.809-1.2,4.881,4.881,0,0,0,.325-1.636c.032-.719.044-.948.044-2.783s-.008-2.06-.044-2.783a4.881,4.881,0,0,0-.325-1.636,3.306,3.306,0,0,0-.809-1.2,3.472,3.472,0,0,0-1.241-.78,5.335,5.335,0,0,0-1.7-.313c-.745-.034-.983-.042-2.882-.042Zm-.626,1.215h.626c1.867,0,2.089.008,2.826.038a4.055,4.055,0,0,1,1.3.233,2.185,2.185,0,0,1,.8.5,2.092,2.092,0,0,1,.523.776,3.647,3.647,0,0,1,.242,1.254c.032.711.04.925.04,2.725s-.008,2.014-.04,2.725a3.67,3.67,0,0,1-.242,1.254,2.092,2.092,0,0,1-.523.776,2.153,2.153,0,0,1-.8.5,4.029,4.029,0,0,1-1.3.233c-.737.031-.959.038-2.826.038s-2.089-.008-2.826-.038a4.054,4.054,0,0,1-1.3-.233,2.185,2.185,0,0,1-.8-.5,2.092,2.092,0,0,1-.523-.776,3.648,3.648,0,0,1-.242-1.254c-.032-.711-.04-.925-.04-2.725s.008-2.014.04-2.725a3.67,3.67,0,0,1,.242-1.254,2.092,2.092,0,0,1,.523-.776,2.184,2.184,0,0,1,.8-.5,4.03,4.03,0,0,1,1.3-.233c.646-.031.9-.038,2.2-.038Zm4.36,1.12a.826.826,0,0,0-.84.81.826.826,0,0,0,.84.81.826.826,0,0,0,.84-.81.826.826,0,0,0-.84-.81Zm-3.734.948a3.528,3.528,0,0,0-3.591,3.463,3.528,3.528,0,0,0,3.591,3.463,3.528,3.528,0,0,0,3.591-3.463,3.526,3.526,0,0,0-3.591-3.463Zm0,1.215a2.289,2.289,0,0,1,2.331,2.247,2.289,2.289,0,0,1-2.331,2.247,2.289,2.289,0,0,1-2.331-2.247A2.289,2.289,0,0,1-73.6,141Z" transform="translate(1635.6 -72.5)" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="x">
+                <g id="Group_521" data-name="Group 521" transform="translate(-1529 -82)">
+                  <rect id="Rectangle_161" data-name="Rectangle 161" width="16" height="16" transform="translate(1529 82)" fill="none" />
+                  <path id="Path_2495" data-name="Path 2495" d="M8.725,5.172,13.561,0H11.724l-3.8,4.06L5.022,0H0L5.084,7.1,0,12.54H1.836L5.881,8.214l3.1,4.326H14ZM2.588,1.33H4.339l7.073,9.88H9.661Z" transform="translate(1530 84)" />
+                </g></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="youtube">
+                <g id="Group_520" data-name="Group 520" transform="translate(-1554 -82)">
+                  <rect id="Rectangle_162" data-name="Rectangle 162" width="16" height="16" transform="translate(1554 82)" fill="none" />
+                  <path id="Path_2494" data-name="Path 2494" d="M972.232,20.031H961.921a1.845,1.845,0,0,0-1.845,1.844v6.449a1.844,1.844,0,0,0,1.845,1.844h10.311a1.844,1.844,0,0,0,1.844-1.844V21.875a1.845,1.845,0,0,0-1.844-1.844m-3.5,5.514-2.867,1.433a.5.5,0,0,1-.72-.444V23.667a.5.5,0,0,1,.72-.445l2.867,1.433a.5.5,0,0,1,0,.889" transform="translate(594.924 64.969)" />
+                </g>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -92,9 +116,9 @@
 </nav>
 
   <!-- sekcja mainbar -->
-  <div class="uk-text-center">
+  <div class="logo-container uk-text-center">
   <a class="uk-logo" href="/">
-    <img src="./images/logo-grojec24.png" width="414" height="106" alt="" />
+    <img src="./images/logo-grojec24.png" width="414" height="106" alt="logo Grójec24" />
   </a>
 </div>
 <hr class="uk-margin-small-bottom" />
@@ -220,10 +244,10 @@
         <canvas width="600" height="400"></canvas>
       </div>
       <div>
-        <div class="uk-card-body">
+        <div class="uk-card-body padding-remove-top-s">
           <span class="uk-label uk-label-danger">Pilne</span>
           <p class="uk-category-article">Aktualności</p>
-          <h2 class="uk-card-title uk-margin-remove-top">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h2>
+          <h2 class="uk-card-title uk-margin-remove-top header-article-title-l">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
           <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
         </div>
@@ -267,50 +291,53 @@
 </div>
 <hr />
 <!--  sekcja trzech artykułów obok siebie -->
-<div class="uk-section">
+<div class="uk-section uk-padding uk-padding-remove-top">
   <div class="uk-container uk-container-large">
-    <div class="uk-child-width-expand@s" data-uk-grid>
-      <div>
-        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+    <div class="uk-grid-small" data-uk-grid>
+      <div class="uk-width-1-3@s">
+        <div class="uk-card uk-grid-collapse uk-margin" data-uk-grid>
           <div class="uk-card-media-left uk-width-2-5@s uk-cover-container">
-            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+            <img src="./images/top2_foto1.jpg" alt="" />
           </div>
           <div class="uk-width-3-5@s">
-            <div class="uk-card-body">
-              <p>Aktualności</p>
-              <h3 class="uk-card-title uk-margin-remove-top">Nietypowa interwencja policji pod Grójcem!</h3>
+            <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+              <p class="uk-category-article">Aktualności</p>
+              <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm">Nietypowa interwencja policji pod Grójcem!</h3>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-1-3@s">
+        <div class="uk-card uk-grid-collapse uk-margin" data-uk-grid>
           <div class="uk-card-media-left uk-width-2-5@s uk-cover-container">
-            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+            <img src="./images/top2_foto2.jpg" alt="" />
           </div>
           <div class="uk-width-3-5@s">
-            <div class="uk-card-body">
-              <p>Kategoria</p>
-              <h3 class="uk-card-title uk-margin-remove-top">Trzech Etiopczyków ukryło się w naczepie tira</h3>
+            <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+              <p class="uk-category-article">Kategoria</p>
+              <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm">Trzech Etiopczyków ukryło się w naczepie tira</h3>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@s">
+        <div class="uk-card uk-grid-collapse uk-margin" data-uk-grid>
           <div class="uk-card-media-left uk-width-2-5@s uk-cover-container">
-            <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+            <img src="./images/top2_foto4.jpg" alt="" />
           </div>
           <div class="uk-width-3-5@s">
-            <div class="uk-card-body">
-              <p>Kategoria</p>
-              <h3 class="uk-card-title uk-margin-remove-top">Markiza Malta - kompaktowe rozwiązanie dla każdego tarasu</h3>
-              <p class="uk-text-meta">Artykuł Sponsorowany</p>
+            <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+              <p class="uk-category-article">Kategoria</p>
+              <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm">Markiza Malta - kompaktowe rozwiązanie dla każdego tarasu</h3>
+              <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <hr />
   </div>
 </div>
 
@@ -338,247 +365,488 @@
   </div>
 </div>
 <!-- sekcja tytuł aktualności -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">Aktualności</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top header-section-title-xl">Aktualności</h2>
   </div>
 </div>
 
 <!-- sekcja tab aktualności -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
-    <ul uk-tab uk-switcher="connect: .switcher-container">
+    <ul data-uk-tab data-uk-switcher="connect: .switcher-container">
       <li><a href="#">Grójec</a></li>
       <li><a href="#">Powiat grójecki</a></li>
       <li><a href="#">Samorząd</a></li>
       <li><a href="#">Praca Grójec</a></li>
       <li><a href="#">Policja</a></li>
     </ul>
-    <div uk-grid>
+    <div class="uk-grid-small" data-uk-grid>
       <div class="uk-width-3-4@m">
         <ul class="uk-switcher uk-margin switcher-container">
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Kategoria</p>
-                    <h3 class="uk-card-title uk-margin-remove-top">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body uk-padding-small">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body uk-padding-small">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
         </ul>
       </div>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
       <div class="uk-width-expand@m">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; min-height: 450; max-height: 600; animation: push">
           <ul class="uk-slideshow-items">
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Możliwość ustawienia wysokości</h3>
                 <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
               </div>
             </li>
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
                 <p class="uk-margin-remove">Aktualnie brak</p>
               </div>
             </li>
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
                 <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
@@ -618,247 +886,488 @@
   </div>
 </div>
 <!-- sekcja tytuł Sport -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">Sport</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet  uk-margin-small-top header-section-title-xl">Sport</h2>
   </div>
 </div>
 
 <!-- sekcja tab sport -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
-    <ul uk-tab uk-switcher="connect: .switcher-container">
+    <ul data-uk-tab data-uk-switcher="connect: .switcher-container">
       <li><a href="#">Grójec</a></li>
       <li><a href="#">Powiat grójecki</a></li>
       <li><a href="#">Samorząd</a></li>
       <li><a href="#">Praca Grójec</a></li>
       <li><a href="#">Policja</a></li>
     </ul>
-    <div uk-grid>
+    <div class="uk-grid-small" data-uk-grid>
       <div class="uk-width-3-4@m">
         <ul class="uk-switcher uk-margin switcher-container">
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Kategoria</p>
-                    <h3 class="uk-card-title uk-margin-remove-top">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body uk-padding-small">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body uk-padding-small">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
         </ul>
       </div>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
       <div class="uk-width-expand@m">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; min-height: 450; max-height: 600; animation: push">
           <ul class="uk-slideshow-items">
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Możliwość ustawienia wysokości</h3>
                 <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
               </div>
             </li>
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
                 <p class="uk-margin-remove">Aktualnie brak</p>
               </div>
             </li>
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
                 <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
@@ -898,247 +1407,488 @@
   </div>
 </div>
 <!-- sekcja tytuł Kultura -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">Kultura</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top header-section-title-xl">Kultura</h2>
   </div>
 </div>
 
 <!-- sekcja tab kultura -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
-    <ul uk-tab uk-switcher="connect: .switcher-container">
+    <ul data-uk-tab data-uk-switcher="connect: .switcher-container">
       <li><a href="#">Grójec</a></li>
       <li><a href="#">Powiat grójecki</a></li>
       <li><a href="#">Samorząd</a></li>
       <li><a href="#">Praca Grójec</a></li>
       <li><a href="#">Policja</a></li>
     </ul>
-    <div uk-grid>
+    <div class="uk-grid-small" data-uk-grid>
       <div class="uk-width-3-4@m">
         <ul class="uk-switcher uk-margin switcher-container">
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Kategoria</p>
-                    <h3 class="uk-card-title uk-margin-remove-top">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body uk-padding-small">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body uk-padding-small">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
           <li class="uk-animation-fade">
-            <div uk-grid>
+            <div class="uk-grid-small" data-uk-grid>
               <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-default">
+                <div class="uk-card">
                   <div class="uk-card-media-top">
-                    <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="600" height="400" alt="" />
+                    <img src="./images/aktualnosci_foto.jpg" width="600" height="400" alt="" />
                   </div>
-                  <div class="uk-card-body">
-                    <p>Aktualności</p>
-                    <h3 class="uk-card-title">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
+                  <div class="uk-card-body padding-remove-left-s">
+                    <p class="uk-category-article">Kategoria</p>
+                    <h3 class="uk-card-title uk-margin-remove-top header-article-title-m">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
                     <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
                   </div>
                 </div>
               </div>
-              <div class="uk-width-3-5@m">
-                <div uk-grid>
+              <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+              <div class="uk-width-expand@m">
+                <div class="uk-grid-small" data-uk-grid>
                   <div class="uk-width-2-3@m">
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
                       <div class="uk-card-media-left uk-cover-container">
-                        <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" />
+                        <img src="./images/apples.jpg" alt="" />
                       </div>
                       <div>
-                        <div class="uk-card-body">
-                          <p>Kategoria</p>
-                          <h3 class="uk-card-title">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="uk-width-1-3@m">
-                    <div class="uk-card uk-card-default uk-card-body">
-                      <p>Kategoria</p>
-                      <h3 class="uk-card-title">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/red-map.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="uk-grid-small" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                      <div class="uk-card-media-left uk-cover-container">
+                        <img src="./images/politicians.jpg" alt="" />
+                      </div>
+                      <div>
+                        <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                          <p class="uk-category-article">Kategoria</p>
+                          <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s">Oszukali sadowników na skupie jabłek. Zatrzymano trzy osoby</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="uk-card padding-remove-top-s uk-card-body padding-remove-bottom-s">
+                      <p class="uk-category-article">Kategoria</p>
+                      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s">Powiatowy Dzień Edukacji w Zespole Szkół im. W. Witosa w Jasieńcu</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="uk-float-right">
+                  <button class="uk-button uk-button-text btn-all-articles">ZOBACZ WSZYSTKIE ARTYKUŁY<span uk-icon="chevron-right"></span></button>
+                </p>
               </div>
             </div>
           </li>
         </ul>
       </div>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
       <div class="uk-width-expand@m">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; min-height: 450; max-height: 600; animation: push">
           <ul class="uk-slideshow-items">
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Możliwość ustawienia wysokości</h3>
                 <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
               </div>
             </li>
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
                 <p class="uk-margin-remove">Aktualnie brak</p>
               </div>
             </li>
             <li>
-              <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" alt="" data-uk-cover />
+              <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
               <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
                 <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
@@ -1155,17 +1905,17 @@
 </div>
 
 <!-- sekcja tytuł Kultura -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">O grójcu</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet uk-heading-bullet-only uk-margin-small-top header-section-title-xl">O Grójcu</h2>
   </div>
 </div>
 
 <!-- sekcja tab O Grójcu -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
-    <ul uk-tab>
+    <ul data-uk-tab>
       <li><a href="#">Historia i zabytkia</a></li>
       <li><a href="#">Kościół i religia</a></li>
       <li><a href="#">Grójczanie i ich pasje</a></li>
@@ -1173,105 +1923,248 @@
     </ul>
     <ul class="uk-switcher uk-margin">
       <li class="uk-animation-fade">
-        <div class="uk-child-width-expand@s" uk-grid>
+        <div class="uk-child-width-expand@m" data-uk-grid>
           <div>
-            <div class="uk-card uk-card-default">
+            <div class="uk-card">
               <div class="uk-card-media-top">
-                <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="1800" height="1200" alt="" />
+                <img src="./images/germany.jpg" width="1800" height="1200" alt="" />
               </div>
-              <div class="uk-card-body">
-                <p>Aktualności</p>
-                <h3 class="uk-card-title">Co widział w niej Stalin? Kolejna świetna książka Grójczanina</h3>
-                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">O Grójcu</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Co widział w niej Stalin? Kolejna świetna książka Grójczanina</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 15 komentarzy | <time datetime="2023-11-23T19:00">04 Listopada 2023</time></p>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
+            <div class="uk-card">
               <div class="uk-card-media-top">
-                <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="1800" height="1200" alt="" />
+                <img src="./images/soldier.jpg" width="1800" height="1200" alt="" />
               </div>
-              <div class="uk-card-body">
-                <p>Aktualności</p>
-                <h3 class="uk-card-title">Mój dziadek był bohaterem</h3>
-                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Grójczanie i ich pasje</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Mój dziadek był bohaterem</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">11 Listopada 2023</time></p>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default">
+            <div class="uk-card">
               <div class="uk-card-media-top">
-                <img src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" width="1800" height="1200" alt="" />
+                <img src="./images/dumpster.jpg" width="1800" height="1200" alt="" />
               </div>
-              <div class="uk-card-body">
-                <p>Aktualności</p>
-                <h3 class="uk-card-title">List otwarty do Burmistrza Gminy i Miasta Grójec</h3>
-                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Publicystyka</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">List otwarty do Burmistrza Gminy i Miasta Grójec</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 7 komentarzy | <time datetime="2023-11-23T19:00">16 Listopada 2023</time></p>
               </div>
             </div>
           </div>
         </div>
       </li>
-      <li class="uk-animation-fade">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li class="uk-animation-fade">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+      <li class="uk-animation-fade">
+        <div class="uk-child-width-expand@m" data-uk-grid>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/germany.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">O Grójcu</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Co widział w niej Stalin? Kolejna świetna książka Grójczanina</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 15 komentarzy | <time datetime="2023-11-23T19:00">04 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/soldier.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Grójczanie i ich pasje</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Mój dziadek był bohaterem</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">11 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/dumpster.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Publicystyka</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">List otwarty do Burmistrza Gminy i Miasta Grójec</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 7 komentarzy | <time datetime="2023-11-23T19:00">16 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="uk-animation-fade">
+        <div class="uk-child-width-expand@m" data-uk-grid>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/germany.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">O Grójcu</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Co widział w niej Stalin? Kolejna świetna książka Grójczanina</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 15 komentarzy | <time datetime="2023-11-23T19:00">04 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/soldier.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Grójczanie i ich pasje</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Mój dziadek był bohaterem</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">11 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/dumpster.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Publicystyka</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">List otwarty do Burmistrza Gminy i Miasta Grójec</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 7 komentarzy | <time datetime="2023-11-23T19:00">16 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="uk-animation-fade">
+        <div class="uk-child-width-expand@m" data-uk-grid>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/germany.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">O Grójcu</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Co widział w niej Stalin? Kolejna świetna książka Grójczanina</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 15 komentarzy | <time datetime="2023-11-23T19:00">04 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/soldier.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Grójczanie i ich pasje</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">Mój dziadek był bohaterem</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 komentarzy | <time datetime="2023-11-23T19:00">11 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card">
+              <div class="uk-card-media-top">
+                <img src="./images/dumpster.jpg" width="1800" height="1200" alt="" />
+              </div>
+              <div class="uk-card-body padding-remove-left-right-s">
+                <p class="uk-category-article">Publicystyka</p>
+                <h3 class="uk-card-title header-article-title-m uk-margin-small-top">List otwarty do Burmistrza Gminy i Miasta Grójec</h3>
+                <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 7 komentarzy | <time datetime="2023-11-23T19:00">16 Listopada 2023</time></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </div>
 
 <!-- sekcja tytuł Kultura -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">Grójec w obiektywie</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top header-section-title-xl">Grójec w obiektywie</h2>
   </div>
 </div>
 
 <!-- sekcja Slideshow -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
-    <div uk-slideshow="animation: fade; min-height: 300; max-height: 465">
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-        <ul class="uk-slideshow-items">
-          <li>
-            <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover />
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-              <h3 class="uk-margin-remove">GRÓJEC CUP 2023! TAK ŚWIĘTOWALIŚMY JUBILEUSZ 10-LECIA GROJEC24.NET</h3>
+    <div data-uk-slider="clsActivated: uk-transition-active; center: true; autoplay: true">
+      <div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <img src="./images/slider.jpg" width="1800" height="1200" alt="" />
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover />
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-              <h3 class="uk-margin-remove">Bottom</h3>
-              <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <img src="./images/slider.jpg" width="1800" height="1200" alt="" />
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-              <h3 class="uk-margin-remove">Bottom</h3>
-              <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <img src="./images/slider.jpg" width="1800" height="1200" alt="" />
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <img src="./images/slider.jpg" width="1800" height="1200" alt="" />
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <img src="./images/slider.jpg" width="1800" height="1200" alt="" />
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </div>
           </li>
         </ul>
 
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+        <a class="uk-position-bottom-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-bottom-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
       </div>
-      <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+      <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
     </div>
   </div>
 </div>
 
 <!-- sekcja tytuł Po godzinach -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">Po godzinach</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet  uk-margin-small-top header-section-title-xl">Po godzinach</h2>
   </div>
 </div>
 
 <!-- sekcja tab Po godzinach -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
     <ul uk-tab>
       <li><a href="#">Historia i zabytkia</a></li>
@@ -1281,247 +2174,537 @@
     </ul>
     <ul class="uk-switcher uk-margin">
       <li class="uk-animation-fade">
-        <div class="uk-child-width-expand@s" uk-grid>
+        <div class="uk-child-width-expand@m" uk-grid>
           <div>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-                <canvas width="600" height="400"></canvas>
+                <img src="./images/pogodzinach_fot1.jpg" alt="" />
               </div>
               <div>
-                <div class="uk-card-body">
-                  <p>Aktualności</p>
-                  <h3 class="uk-card-title">Restauracja spod Grójca wzięła udział w Bitwie o gości!</h3>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Aktualności</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Restauracja spod Grójca wzięła udział w Bitwie o gości!</h3>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-                <canvas width="600" height="400"></canvas>
+                <img src="./images/pogodzinach_fot2.jpg" alt="" />
               </div>
               <div>
-                <div class="uk-card-body">
-                  <p>Kategotia</p>
-                  <h3 class="uk-card-title">Mieszkanka Grójca w Milionerach. Posłuchała intuicji i straciła 85 tysięcy złotych</h3>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Mieszkanka Grójca w Milionerach. Posłuchała intuicji i straciła 85 tysięcy złotych</h3>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-                <canvas width="600" height="400"></canvas>
+                <img src="./images/pogodzinach_fot3.jpg" alt="" />
               </div>
               <div>
-                <div class="uk-card-body">
-                  <p>Kategoria</p>
-                  <h3 class="uk-card-title">Dlaczego warto wybrać mieszkanie w spokojnej dzielnicy?</h3>
-                  <p>Artykuł sponsorowany</p>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Dlaczego warto wybrać mieszkanie w spokojnej dzielnicy?</h3>
+                  <p class="uk-article-meta">Artykuł sponsorowany</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <hr />
-        <div class="uk-child-width-expand@s" uk-grid>
+        <div class="uk-child-width-expand@m" uk-grid>
           <div>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-                <canvas width="600" height="400"></canvas>
+                <img src="./images/pogodzinach_fot4.jpg" alt="" />
               </div>
               <div>
-                <div class="uk-card-body">
-                  <p>Kategoria</p>
-                  <h3 class="uk-card-title">Inspiracje na miejsce do przechowywania dla każdego mieszkania</h3>
-                  <p>Artykuł sponsorowany</p>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Inspiracje na miejsce do przechowywania dla każdego mieszkania</h3>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-                <canvas width="600" height="400"></canvas>
+                <img src="./images/pogodzinach_fot5.jpg" alt="" />
               </div>
               <div>
-                <div class="uk-card-body">
-                  <p>Kategoria</p>
-                  <h3 class="uk-card-title">Na co zwrócić uwagę przy wyborze okien do programu Czyste Powietrze?</h3>
-                  <p>Artykuł sponsorowany</p>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Na co zwrócić uwagę przy wyborze okien do programu Czyste Powietrze?</h3>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
               <div class="uk-card-media-left uk-cover-container">
-                <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover />
-                <canvas width="600" height="400"></canvas>
+                <img src="./images/pogodzinach_fot6.jpg" alt="" />
               </div>
               <div>
-                <div class="uk-card-body">
-                  <p>Kategoria</p>
-                  <h3 class="uk-card-title">Aranżacja pomieszczeń na święta – jak zrobić to dobrze?</h3>
-                  <p>Artykuł sponsorowany</p>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Aranżacja pomieszczeń na święta – jak zrobić to dobrze?</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </li>
-      <li class="uk-animation-fade">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-      <li class="uk-animation-fade">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+      <li class="uk-animation-fade">
+        <div class="uk-child-width-expand@m" uk-grid>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot1.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Aktualności</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Restauracja spod Grójca wzięła udział w Bitwie o gości!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot2.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Mieszkanka Grójca w Milionerach. Posłuchała intuicji i straciła 85 tysięcy złotych</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot3.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Dlaczego warto wybrać mieszkanie w spokojnej dzielnicy?</h3>
+                  <p class="uk-article-meta">Artykuł sponsorowany</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-child-width-expand@m" uk-grid>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot4.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Inspiracje na miejsce do przechowywania dla każdego mieszkania</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot5.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Na co zwrócić uwagę przy wyborze okien do programu Czyste Powietrze?</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot6.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Aranżacja pomieszczeń na święta – jak zrobić to dobrze?</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="uk-animation-fade">
+        <div class="uk-child-width-expand@m" uk-grid>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot1.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Aktualności</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Restauracja spod Grójca wzięła udział w Bitwie o gości!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot2.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Mieszkanka Grójca w Milionerach. Posłuchała intuicji i straciła 85 tysięcy złotych</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot3.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Dlaczego warto wybrać mieszkanie w spokojnej dzielnicy?</h3>
+                  <p class="uk-article-meta">Artykuł sponsorowany</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-child-width-expand@m" uk-grid>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot4.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Inspiracje na miejsce do przechowywania dla każdego mieszkania</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot5.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Na co zwrócić uwagę przy wyborze okien do programu Czyste Powietrze?</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot6.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Aranżacja pomieszczeń na święta – jak zrobić to dobrze?</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="uk-animation-fade">
+        <div class="uk-child-width-expand@m" uk-grid>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot1.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Aktualności</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Restauracja spod Grójca wzięła udział w Bitwie o gości!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot2.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Mieszkanka Grójca w Milionerach. Posłuchała intuicji i straciła 85 tysięcy złotych</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot3.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Dlaczego warto wybrać mieszkanie w spokojnej dzielnicy?</h3>
+                  <p class="uk-article-meta">Artykuł sponsorowany</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-child-width-expand@m" uk-grid>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot4.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Inspiracje na miejsce do przechowywania dla każdego mieszkania</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot5.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Na co zwrócić uwagę przy wyborze okien do programu Czyste Powietrze?</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="./images/pogodzinach_fot6.jpg" alt="" />
+              </div>
+              <div>
+                <div class="uk-card-body padding-remove-top-s padding-remove-bottom-s">
+                  <p class="uk-category-article">Kategoria</p>
+                  <h3 class="uk-card-title uk-margin-remove-top header-article-title-sm padding-remove-bottom-s">Aranżacja pomieszczeń na święta – jak zrobić to dobrze?</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </div>
 
 <!-- sekcja tytuł Z regionu -->
-<div class="uk-section uk-padding-remove">
+<div class="uk-section uk-padding">
   <div class="uk-container uk-container-large">
-    <hr />
-    <h2 class="uk-heading-bullet">Z regionu</h2>
+    <hr class="divider-fat" />
+    <h2 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top header-section-title-xl">Z regionu</h2>
   </div>
 </div>
 
 <!-- sekcja Z regionu -->
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-large">
-    <div class="uk-child-width-1-4@s" uk-grid>
-      <div>
-        <div class="uk-card uk-card-default">
+    <div class="uk-grid-small" data-uk-grid>
+      <div class="uk-width-expand@m">
+        <div class="uk-card">
           <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
+            <img src="./images/articles-1.jpg" width="1800" height="1200" alt="" />
           </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="uk-card-body padding-remove-left-right-s padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Mazowsze</h3>
+            <ul class="uk-list-arrow">
+              <li>Sejmik Mazowsza inwestuje w sport dzieci</li>
+              <li>Otwarto nowy węzeł na S7 Grójec - Warszawa</li>
+              <li>Na Alei Krakowskiej rozpędził swoje audi do 200 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-card">
+          <div class="uk-card-media-top">
+            <img src="./images/brama.jpg" width="1800" height="1200" alt="" />
+          </div>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Grójec</h3>
+            <ul class="uk-list-arrow">
+              <li>Policjanci z Grójca poszukują właściciela pieniędzy</li>
+              <li>Nie chcą wieży 5G w Kobylinie</li>
+              <li>Będzie nowy chodnik wzdłuż ulicy Orzeszkowej</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-card">
+          <div class="uk-card-media-top">
+            <img src="./images/policja.jpg" width="1800" height="1200" alt="" />
+          </div>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Belsk Duży</h3>
+            <ul class="uk-list-arrow">
+              <li>Piknik Średniowieczny na 1000-lecie grodu obronnego w Lewiczynie</li>
+              <li>Zderzenie ciężarówek pod Grójcem! Na S7 wysypały się owoce</li>
+              <li>Nieodpowiedzialny 59-latek. Pędził przez Belsk Duży 120 km/h</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="uk-flex-last">
-        <div class="uk-card uk-card-default">
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@m">
+        <div class="uk-card">
           <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
+            <img src="./images/policja.jpg" width="1800" height="1200" alt="" />
           </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Błedów</h3>
+            <ul class="uk-list-arrow">
+              <li>Piknik Średniowieczny na 1000-lecie grodu obronnego w Lewiczynie</li>
+              <li>Zderzenie ciężarówek pod Grójcem! Na S7 wysypały się owoce</li>
+              <li>Nieodpowiedzialny 59-latek. Pędził przez Belsk Duży 120 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-card">
+          <div class="uk-card-media-top">
+            <img src="./images/godlo.jpg" width="1800" height="1200" alt="" />
+          </div>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Goszczów</h3>
+            <ul class="uk-list-arrow">
+              <li>Nowy amfiteatr przy ul. Piotra Skargi z poślizgiem</li>
+              <li>Żołnierska pamięć nadal trwa. Terytorialsi porządkują groby...</li>
+              <li>Policja ostrzega przed Dniem Wszystkich Świętych</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-card">
+          <div class="uk-card-media-top">
+            <img src="./images/brama.jpg" width="1800" height="1200" alt="" />
+          </div>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Chynów</h3>
+            <ul class="uk-list-arrow">
+              <li>Policjanci z Grójca poszukują właściciela pieniędzy</li>
+              <li>Nie chcą wieży 5G w Kobylinie</li>
+              <li>Będzie nowy chodnik wzdłuż ulicy Orzeszkowej</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div>
-        <div class="uk-card uk-card-default">
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@m">
+        <div class="uk-card">
           <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
+            <img src="./images/brama.jpg" width="1800" height="1200" alt="" />
           </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Warka</h3>
+            <ul class="uk-list-arrow">
+              <li>Policjanci z Grójca poszukują właściciela pieniędzy</li>
+              <li>Nie chcą wieży 5G w Kobylinie</li>
+              <li>Będzie nowy chodnik wzdłuż ulicy Orzeszkowej</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-card">
+          <div class="uk-card-media-top">
+            <img src="./images/articles-1.jpg" width="1800" height="1200" alt="" />
+          </div>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Mogielnica</h3>
+            <ul class="uk-list-arrow">
+              <li>Sejmik Mazowsza inwestuje w sport dzieci</li>
+              <li>Otwarto nowy węzeł na S7 Grójec - Warszawa</li>
+              <li>Na Alei Krakowskiej rozpędził swoje audi do 200 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="uk-card">
+          <div class="uk-card-media-top">
+            <img src="./images/godlo.jpg" width="1800" height="1200" alt="" />
+          </div>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Nowe Miasto nad Pilicą</h3>
+            <ul class="uk-list-arrow">
+              <li>Nowy amfiteatr przy ul. Piotra Skargi z poślizgiem</li>
+              <li>Żołnierska pamięć nadal trwa. Terytorialsi porządkują groby...</li>
+              <li>Policja ostrzega przed Dniem Wszystkich Świętych</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div>
-        <div class="uk-card uk-card-default">
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@m">
+        <div class="uk-card">
           <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
+            <img src="./images/godlo.jpg" width="1800" height="1200" alt="" />
           </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Powiat Grójecki</h3>
+            <ul class="uk-list-arrow">
+              <li>Nowy amfiteatr przy ul. Piotra Skargi z poślizgiem</li>
+              <li>Żołnierska pamięć nadal trwa. Terytorialsi porządkują groby...</li>
+              <li>Policja ostrzega przed Dniem Wszystkich Świętych</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="uk-flex-first">
-        <div class="uk-card uk-card-default">
+        <hr />
+        <div class="uk-card">
           <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
+            <img src="./images/policja.jpg" width="1800" height="1200" alt="" />
           </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Belsk Duży</h3>
+            <ul class="uk-list-arrow">
+              <li>Piknik Średniowieczny na 1000-lecie grodu obronnego w Lewiczynie</li>
+              <li>Zderzenie ciężarówek pod Grójcem! Na S7 wysypały się owoce</li>
+              <li>Nieodpowiedzialny 59-latek. Pędził przez Belsk Duży 120 km/h</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
+        <hr />
+        <div class="uk-card">
           <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
+            <img src="./images/articles-1.jpg" width="1800" height="1200" alt="" />
           </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt="" />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <div class="uk-card-body padding-remove-left-right-s">
+            <h3 class="uk-card-title header-article-title-sl">Jasieniec</h3>
+            <ul class="uk-list-arrow">
+              <li>Sejmik Mazowsza inwestuje w sport dzieci</li>
+              <li>Otwarto nowy węzeł na S7 Grójec - Warszawa</li>
+              <li>Na Alei Krakowskiej rozpędził swoje audi do 200 km/h</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1530,94 +2713,137 @@
 </div>
 
 <!-- sekcja footer -->
-<div class="uk-section uk-background-cover" style="background-image: url('https://placehold.co/1920x1080/000/222');">
+<footer id="footer">
+  <div class="uk-section uk-background-cover" style="background-image: url('./images/background-footer.jpg')">
     <div class="uk-container uk-container-large">
-        <div class="uk-grid-match" data-uk-grid>
-            <div class="uk-width-2-5@m">
-                <div class="uk-card uk-card-body uk-light">
-                    <img class="logo" src="https://placehold.co/240x61?text=logo" alt="logo" width="240" height="61">
-                    <p>Grojec24.net - największy portal informacyjny<br> Grójca i Powiatu Grójeckiego.</p>
-                    <p>
-                        Od 2013 roku dostarczamy najświeższe<br> wiadomości z Grójca i okolic. Każdego miesiąca<br> gościmy na ekranach tysięcy mieszkańców.
-                    </p>
-                </div>
-            </div>
-            <div class="uk-width-3-5@m">
-                    <div class="uk-child-width-1-3@m" data-uk-grid>
-<div>
-    <div class="uk-card uk-card-body uk-light">
-        <h3>Grojec24.net</h3>
-        <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Samorząd</a></li>
-                    <li><a href="#">Policja</a></li>
-                    <li><a href="#">Na Sygnale</a></li>
-                    <li><a href="#">Grójecki Ośrodek Sportu</a></li>
-                    <li><a href="#">Biblioteka w Grójcu</a></li>
-                    <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
-                    <li><a href="#">Historia i zabytki</a></li>
-                    <li><a href="#">Kościół i religia</a></li>
-                    <li><a href="#">Grójczanie i ich pasje</a></li>
-                    <li><a href="#">Mazowsze Grójec</a></li>
-                    <li><a href="#">MKS Grójec</a></li>
-                    <li><a href="#">Nieruchomości Grójec</a></li>
-                </ul>
-    </div>
-</div>
-<div>
-    <div class="uk-card uk-card-body uk-light">
-        <h3>Polecamy</h3>
-                <ul class="uk-nav uk-nav-default">
-                    <li><a href="#">Aktualności</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Kultura</a></li>
-                    <li><a href="#">O Grójcu</a></li>
-                    <li><a href="#">Po godzinach</a></li>
-                    <li><a href="#">Grójec w obiektywie</a></li>
-                    <li><a href="#">TVGrójec24</a></li>
-                    <li><a href="#">Ogłoszenia</a></li>
-                    <li><a href="#">Praca</a></li>
-                    <li><a href="#">Alarm24</a></li>
-                    <li><a href="#">Reklama</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-    </div>
-</div>
-<div>
-    <div class="uk-card uk-card-body uk-light">
-        <h3>Informacje</h3>
-                <ul class="uk-nav uk-nav-default">
-                    <li><a href="#">Grójec</a></li>
-                    <li><a href="#">Powiat Grójecki</a></li>
-                    <li><a href="#">Belsk Duży</a></li>
-                    <li><a href="#">Błedów</a></li>
-                    <li><a href="#">Chynów</a></li>
-                    <li><a href="#">Goszczyn</a></li>
-                    <li><a href="#">Jasieniec</a></li>
-                    <li><a href="#">Mogielnica</a></li>
-                    <li><a href="#">Nowe Miasto nad Pilicą</a></li>
-                    <li><a href="#">Pniewy</a></li>
-                    <li><a href="#">Warka</a></li>
-                    <li><a href="#">Mazowsze</a></li>
-                </ul>
-    </div>
-</div>
-                    </div>
-             </div>
+      <div class="uk-grid-match" data-uk-grid>
+        <div class="uk-width-2-5@m">
+          <div class="uk-card uk-card-body uk-light">
+            <img class="logo" src="./images/logo-grojec24-white.png" alt="logo" width="240" height="61" />
+            <p>
+              Grojec24.net - największy portal informacyjny<br />
+              Grójca i Powiatu Grójeckiego.
+            </p>
+            <p>
+              Od 2013 roku dostarczamy najświeższe<br />
+              wiadomości z Grójca i okolic. Każdego miesiąca<br />
+              gościmy na ekranach tysięcy mieszkańców.
+            </p>
+            <ul class="uk-navbar-nav">
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="facebook">
+                    <g id="Group_519" data-name="Group 519" transform="translate(-1529 -63)">
+                      <rect id="Rectangle_160" data-name="Rectangle 160" width="16" height="16" transform="translate(1529 63)" fill="none"/>
+                      <path id="Path_2493" data-name="Path 2493" d="M1332.954,303.027l.386-2.514h-2.412v-1.632a1.257,1.257,0,0,1,1.417-1.359h1.1v-2.141a13.373,13.373,0,0,0-1.947-.17,3.07,3.07,0,0,0-3.286,3.384v1.917H1326v2.514h2.209v6.079a8.795,8.795,0,0,0,2.719,0v-6.079Z" transform="translate(207 -231.212)"/>
+                    </g>
+                  </svg></a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="instagram">
+                    <g id="Group_522" data-name="Group 522" transform="translate(-1554 -63)">
+                      <rect id="Rectangle_163" data-name="Rectangle 163" width="16" height="16" transform="translate(1554 63)" fill="none"/>
+                      <path id="Path_2496" data-name="Path 2496" d="M-73.6,136.5c-1.9,0-2.14.008-2.886.042a5.286,5.286,0,0,0-1.7.313,3.4,3.4,0,0,0-1.241.78,3.356,3.356,0,0,0-.809,1.2,4.712,4.712,0,0,0-.325,1.636c-.032.719-.044.948-.044,2.783s.008,2.06.044,2.783a4.785,4.785,0,0,0,.325,1.636,3.257,3.257,0,0,0,.809,1.2,3.454,3.454,0,0,0,1.241.78,5.309,5.309,0,0,0,1.7.313c.745.034.983.042,2.886.042s2.136-.008,2.886-.042a5.337,5.337,0,0,0,1.7-.313,3.439,3.439,0,0,0,1.237-.78,3.357,3.357,0,0,0,.809-1.2,4.881,4.881,0,0,0,.325-1.636c.032-.719.044-.948.044-2.783s-.008-2.06-.044-2.783a4.881,4.881,0,0,0-.325-1.636,3.306,3.306,0,0,0-.809-1.2,3.472,3.472,0,0,0-1.241-.78,5.335,5.335,0,0,0-1.7-.313c-.745-.034-.983-.042-2.882-.042Zm-.626,1.215h.626c1.867,0,2.089.008,2.826.038a4.055,4.055,0,0,1,1.3.233,2.185,2.185,0,0,1,.8.5,2.092,2.092,0,0,1,.523.776,3.647,3.647,0,0,1,.242,1.254c.032.711.04.925.04,2.725s-.008,2.014-.04,2.725a3.67,3.67,0,0,1-.242,1.254,2.092,2.092,0,0,1-.523.776,2.153,2.153,0,0,1-.8.5,4.029,4.029,0,0,1-1.3.233c-.737.031-.959.038-2.826.038s-2.089-.008-2.826-.038a4.054,4.054,0,0,1-1.3-.233,2.185,2.185,0,0,1-.8-.5,2.092,2.092,0,0,1-.523-.776,3.648,3.648,0,0,1-.242-1.254c-.032-.711-.04-.925-.04-2.725s.008-2.014.04-2.725a3.67,3.67,0,0,1,.242-1.254,2.092,2.092,0,0,1,.523-.776,2.184,2.184,0,0,1,.8-.5,4.03,4.03,0,0,1,1.3-.233c.646-.031.9-.038,2.2-.038Zm4.36,1.12a.826.826,0,0,0-.84.81.826.826,0,0,0,.84.81.826.826,0,0,0,.84-.81.826.826,0,0,0-.84-.81Zm-3.734.948a3.528,3.528,0,0,0-3.591,3.463,3.528,3.528,0,0,0,3.591,3.463,3.528,3.528,0,0,0,3.591-3.463,3.526,3.526,0,0,0-3.591-3.463Zm0,1.215a2.289,2.289,0,0,1,2.331,2.247,2.289,2.289,0,0,1-2.331,2.247,2.289,2.289,0,0,1-2.331-2.247A2.289,2.289,0,0,1-73.6,141Z" transform="translate(1635.6 -72.5)"/>
+                    </g>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="x">
+                        <g id="Group_521" data-name="Group 521" transform="translate(-1529 -82)">
+                          <rect id="Rectangle_161" data-name="Rectangle 161" width="16" height="16" transform="translate(1529 82)" fill="none"/>
+                          <path id="Path_2495" data-name="Path 2495" d="M8.725,5.172,13.561,0H11.724l-3.8,4.06L5.022,0H0L5.084,7.1,0,12.54H1.836L5.881,8.214l3.1,4.326H14ZM2.588,1.33H4.339l7.073,9.88H9.661Z" transform="translate(1530 84)"/>
+                        </g>
+                      </svg></a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="youtube">
+  <g id="Group_520" data-name="Group 520" transform="translate(-1554 -82)">
+    <rect id="Rectangle_162" data-name="Rectangle 162" width="16" height="16" transform="translate(1554 82)" fill="none"/>
+    <path id="Path_2494" data-name="Path 2494" d="M972.232,20.031H961.921a1.845,1.845,0,0,0-1.845,1.844v6.449a1.844,1.844,0,0,0,1.845,1.844h10.311a1.844,1.844,0,0,0,1.844-1.844V21.875a1.845,1.845,0,0,0-1.844-1.844m-3.5,5.514-2.867,1.433a.5.5,0,0,1-.72-.444V23.667a.5.5,0,0,1,.72-.445l2.867,1.433a.5.5,0,0,1,0,.889" transform="translate(594.924 64.969)" />
+  </g>
+</svg>
+</a>
+                </li>
+              </ul>
+          </div>
         </div>
+        <div class="uk-width-3-5@m">
+          <div class="uk-child-width-1-3@m" data-uk-grid>
+            <div>
+              <div class="uk-card uk-card-body uk-light">
+                <h3>Grojec24.net</h3>
+                <ul class="uk-nav uk-nav-default">
+                  <li class="uk-active"><a href="#">Samorząd</a></li>
+                  <li><a href="#">Policja</a></li>
+                  <li><a href="#">Na Sygnale</a></li>
+                  <li><a href="#">Grójecki Ośrodek Sportu</a></li>
+                  <li><a href="#">Biblioteka w Grójcu</a></li>
+                  <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
+                  <li><a href="#">Historia i zabytki</a></li>
+                  <li><a href="#">Kościół i religia</a></li>
+                  <li><a href="#">Grójczanie i ich pasje</a></li>
+                  <li><a href="#">Mazowsze Grójec</a></li>
+                  <li><a href="#">MKS Grójec</a></li>
+                  <li><a href="#">Nieruchomości Grójec</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-body uk-light">
+                <h3>Polecamy</h3>
+                <ul class="uk-nav uk-nav-default">
+                  <li><a href="#">Aktualności</a></li>
+                  <li><a href="#">Sport</a></li>
+                  <li><a href="#">Kultura</a></li>
+                  <li><a href="#">O Grójcu</a></li>
+                  <li><a href="#">Po godzinach</a></li>
+                  <li><a href="#">Grójec w obiektywie</a></li>
+                  <li><a href="#">TVGrójec24</a></li>
+                  <li><a href="#">Ogłoszenia</a></li>
+                  <li><a href="#">Praca</a></li>
+                  <li><a href="#">Alarm24</a></li>
+                  <li><a href="#">Reklama</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-body uk-light">
+                <h3>Informacje</h3>
+                <ul class="uk-nav uk-nav-default">
+                  <li><a href="#">Grójec</a></li>
+                  <li><a href="#">Powiat Grójecki</a></li>
+                  <li><a href="#">Belsk Duży</a></li>
+                  <li><a href="#">Błedów</a></li>
+                  <li><a href="#">Chynów</a></li>
+                  <li><a href="#">Goszczyn</a></li>
+                  <li><a href="#">Jasieniec</a></li>
+                  <li><a href="#">Mogielnica</a></li>
+                  <li><a href="#">Nowe Miasto nad Pilicą</a></li>
+                  <li><a href="#">Pniewy</a></li>
+                  <li><a href="#">Warka</a></li>
+                  <li><a href="#">Mazowsze</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<div class="uk-section uk-padding-small">
+  </div>
+  <div class="copyright uk-section uk-padding-small">
     <div class="uk-container uk-container-large uk-text-center">
-
-            &copy;2013 - &copy;2024 
-            <span>
-                Grojec24.net
-            - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego<br> Wydawcą portalu jest - 
-                AaaMedia.pl Mateusz Adamski
-            </span>
+      &copy;2013 - &copy;2024
+      <span>
+        Grojec24.net - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego<br />
+        Wydawcą portalu jest - AaaMedia.pl Mateusz Adamski
+      </span>
     </div>
-</div>
+  </div>
+</footer>
+
 <script src="js/app.js"></script>
 </body>
 </html>
+
