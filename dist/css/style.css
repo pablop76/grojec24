@@ -13,6 +13,10 @@
   background: rgba(5, 39, 56, 0.8);
 }
 
+a.uk-link-heading:hover {
+  color: #2a81ac;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
