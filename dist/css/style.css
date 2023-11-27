@@ -9,6 +9,10 @@
   max-width: 1440px;
 }
 
+.uk-overlay-primary {
+  background: rgba(5, 39, 56, 0.8);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -240,6 +244,13 @@ hr.divider-fat {
 }
 .slider a.uk-slidenav.uk-icon {
   color: #202020;
+}
+.slider img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 .uk-tab > .uk-active > a {
