@@ -3,6 +3,7 @@
 @import "./base/typography";
 @import "./base/my_classes";
 @import "./themes/default";
+@import "./components/logo";
 @import "./components/label";
 @import "./components/divider";
 @import "./components/bullet";
@@ -11,11 +12,10 @@
 @import "./components/list";
 @import "./components/icons";
 @import "./components/overlay-photo-video-icon";
+@import "./components/search-input";
 @import "./layout/navbar";
 @import "./layout/navigation";
 @import "./layout/news-ticker";
 @import "./layout/slider";
 @import "./layout/tab";
 @import "./layout/footer";
-
-

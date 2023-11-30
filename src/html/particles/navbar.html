@@ -2,19 +2,21 @@
   <div class="uk-container uk-container-large">
     <div data-uk-navbar data-uk-grid>
       <div class="uk-navbar-left uk-width-auto@m">
-        <ul class="uk-navbar-nav uk-flex uk-flex-middle uk-text-uppercase">
-          <li><a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a></li>
-          <li>
-            <a class="uk-search-toggle" href="#modal-full" data-uk-search-icon data-uk-toggle></a>
-            <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
-              <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
-                  <button class="uk-modal-close-full" type="button" uk-close></button>
-                  <form class="uk-search uk-search-large">
-                      <input class="uk-search-input uk-text-center" type="search" placeholder="Szukaj..." aria-label="Search" autofocus>
-                  </form>
-              </div>
+        <a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a>
+        <div class="nav-overlay uk-navbar-right">
+          <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        </div>
+
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+          <div class="uk-navbar-item uk-width-expand">
+            <form class="uk-search uk-search-navbar uk-width-1-1">
+              <input class="uk-search-input" type="search" placeholder="Szukaj" aria-label="Search" autofocus />
+            </form>
           </div>
-          </li>
+
+          <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        </div>
+        <ul class="uk-navbar-nav uk-flex uk-flex-middle uk-text-uppercase nav-overlay">
           <li>Środa</li>
           <li>|</li>
           <li><time datetime="2023-11-22T19:00">22 Listopada 2023</time></li>

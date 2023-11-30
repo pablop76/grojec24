@@ -2,7 +2,7 @@
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
 .uk-navbar-toggle {
-  min-height: 20px;
+  min-height: 21px;
 }
 
 .uk-container-large {
@@ -92,6 +92,10 @@ h6 {
   letter-spacing: 2.4px;
 }
 
+.uk-logo {
+  margin-top: 20px;
+}
+
 .uk-label-danger {
   background-color: #f20764;
   letter-spacing: 3.3px;
@@ -167,6 +171,12 @@ hr.divider-fat {
   margin-right: 2px;
 }
 
+.uk-search-navbar .uk-search-input {
+  height: 16px;
+  background: 0 0;
+  font-size: 0.95rem;
+}
+
 #navbar {
   background-color: #f3f3f3;
 }
@@ -212,7 +222,10 @@ hr.divider-fat {
   background-color: #f3f3f3;
 }
 .news-ticker .tm-item {
+  display: flex;
+  align-items: center;
   font-size: 1.0625rem;
+  margin-left: 20px;
 }
 .news-ticker .tm-heading {
   position: relative;
@@ -224,7 +237,6 @@ hr.divider-fat {
   letter-spacing: 2.4px;
 }
 .news-ticker .tm-content.uk-panel {
-  padding: 17px;
   color: #4c4c4c;
 }
 .news-ticker .tm-heading:after {

@@ -1,7 +1,10 @@
 .news-ticker {
   background-color: $color-accent-1;
   .tm-item {
+    display: flex;
+    align-items: center;
     font-size: 1.0625rem;
+    margin-left: 20px;
   }
 
   .tm-heading {
@@ -14,7 +17,7 @@
     letter-spacing: 2.4px;
   }
   .tm-content.uk-panel {
-    padding: 17px;
+    // padding: 17px;
     color: $color-navbar;
   }
 
