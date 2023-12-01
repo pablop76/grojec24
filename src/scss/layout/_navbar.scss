@@ -7,7 +7,7 @@
   }
 }
 .uk-navbar-nav {
-  & > li.uk-active > a {
+  & > li.uk-active > a,& > li>a:hover {
     color: $color-accent-2;
     font-family: "Roboto", sans-serif;
     position: relative;
@@ -15,11 +15,20 @@
       position: absolute;
       content: "";
       display: block;
-      width: 150%;
+      width: 120%;
       height: 3px;
-      bottom: -13px;
-      left: -25%;
+      bottom: -12px;
+      left: -10%;
       background-color: $color-accent-2;
+      animation: stretch .5s forwards;
     }
+  }
+}
+@keyframes stretch {
+  0% {
+    width: 0;
+  }
+  100%{
+    width: 120%;
   }
 }

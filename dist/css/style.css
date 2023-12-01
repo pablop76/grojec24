@@ -185,22 +185,31 @@ hr.divider-fat {
   font-size: 0.6875rem;
 }
 
-.uk-navbar-nav > li.uk-active > a {
+.uk-navbar-nav > li.uk-active > a, .uk-navbar-nav > li > a:hover {
   color: #2a81ac;
   font-family: "Roboto", sans-serif;
   position: relative;
 }
-.uk-navbar-nav > li.uk-active > a:before {
+.uk-navbar-nav > li.uk-active > a:before, .uk-navbar-nav > li > a:hover:before {
   position: absolute;
   content: "";
   display: block;
-  width: 150%;
+  width: 120%;
   height: 3px;
-  bottom: -13px;
-  left: -25%;
+  bottom: -12px;
+  left: -10%;
   background-color: #2a81ac;
+  animation: stretch 0.5s forwards;
 }
 
+@keyframes stretch {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 120%;
+  }
+}
 .uk-navbar-nav > li > a {
   text-transform: inherit;
   font-size: 0.9375rem;
