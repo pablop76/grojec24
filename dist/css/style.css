@@ -265,7 +265,12 @@ a.uk-link-text:hover {
   display: flex;
   align-items: center;
   font-size: 1.0625rem;
-  margin-left: 15px;
+  margin-left: 20px;
+}
+@media (max-width: 640px) {
+  .news-ticker .tm-item {
+    margin-left: 5px;
+  }
 }
 .news-ticker .tm-heading {
   position: relative;

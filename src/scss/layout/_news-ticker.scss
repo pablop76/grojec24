@@ -4,7 +4,12 @@
     display: flex;
     align-items: center;
     font-size: 1.0625rem;
-    margin-left: 15px;
+    margin-left: 20px;
+  }
+  @media(max-width: 640px){
+    .tm-item {
+      margin-left: 5px;
+    }
   }
 
   .tm-heading {
