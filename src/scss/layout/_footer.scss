@@ -1,16 +1,21 @@
 #footer {
-  background-color:$color-accent-1;
+  background-color: $color-accent-1;
   font-weight: 300;
-  .uk-nav-default>li.uk-active>a{
+  .uk-nav-default > li.uk-active > a {
     font-weight: initial;
     color: $color-accent-2;
   }
-  .uk-nav>li>a {
+  .uk-nav > li > a {
     padding: 0px 40px;
     line-height: 23px;
   }
-  .copyright{
+  .copyright {
     font-size: 12px;
     color: $color-footer-navbar;
+  }
+  a {
+    &:hover {
+      color: $color-accent-2;
+    }
   }
 }

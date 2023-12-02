@@ -6,6 +6,12 @@
 }
 //lepka nawigacja
 .navbar-container-sticky.uk-sticky.uk-active {
+  #navbar-desktop{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
   background-color: #fff;
   .uk-logo {
     display: none;

@@ -1,3 +1,8 @@
 .uk-logo{
     margin-top: 20px;
 }
+@media(max-width:640px){
+    .uk-logo{
+        width: 200px;
+    }
+}

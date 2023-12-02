@@ -1,7 +1,11 @@
 .overlay-foto-video-icon{
     div{
-        padding: 10px;
+        padding:2px 5px;
         background-color: $color-darkblue;
         margin-right: 2px;
+    }
+    svg{
+        width: 15px;
+        height: 15px;
     }
 }

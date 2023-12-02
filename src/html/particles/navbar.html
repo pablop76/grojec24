@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar-top uk-navbar-container uk-navbar-transparent uk-padding-small">
+<nav uk-sticky="show-on-up: true; animation: uk-animation-slide-top" id="navbar" class="navbar-top uk-navbar-container uk-navbar-transparent uk-padding-small">
   <div class="uk-container uk-container-large">
     <div data-uk-navbar data-uk-grid>
       <div class="uk-navbar-left uk-width-auto@m">
@@ -25,33 +25,76 @@
           <div class="uk-offcanvas-bar uk-flex uk-flex-column">
             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
               <li>
-                <div class="uk-margin">
+                <div class="uk-margin-medium">
                   <a href="#"><img class="logo" src="./images/logo-grojec24-white.png" alt="logo Grójec" /></a>
                 </div>
               </li>
               <li>
-                <div class="uk-margin">
+                <div class="uk-margin-medium">
                   <form class="uk-search uk-search-default">
                     <span data-uk-search-icon></span>
                     <input class="uk-search-input" type="search" placeholder="Szukaj" aria-label="Search" />
                   </form>
                 </div>
               </li>
-              <li class="uk-divider-icon"></li>
+              <li><hr class="uk-margin-top"></li>
               <li class="uk-active"><a href="#">Aktualności</a></li>
               <li><a href="#">Sport</a></li>
               <li><a href="#">Kultura</a></li>
               <li><a href="#">O Grójcu</a></li>
               <li><a href="#">Po godzinach</a></li>
-              <li class="uk-divider-icon"></li>
+              <li><hr class="uk-margin-top"></li>
               <li><a href="#">Grójec w obiektywie</a></li>
               <li><a href="#">TVGrójec24</a></li>
               <li><a href="#">Ogłoszenia</a></li>
               <li><a href="#">Praca</a></li>
-              <li class="uk-divider-icon"></li>
+              <li><hr class="uk-margin-top" ></li>
               <li><a href="#">Alarm24</a></li>
               <li><a href="#">Reklama</a></li>
               <li><a href="#">Redakcja</a></li>
+              <li><hr class="uk-margin-top" ></li>
+              <li>
+                <ul class="uk-navbar-nav uk-flex-center">
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="facebook">
+                        <g id="Group_519" data-name="Group 519" transform="translate(-1529 -63)">
+                          <rect id="Rectangle_160" data-name="Rectangle 160" width="16" height="16" transform="translate(1529 63)" fill="none" />
+                          <path id="Path_2493" data-name="Path 2493" d="M1332.954,303.027l.386-2.514h-2.412v-1.632a1.257,1.257,0,0,1,1.417-1.359h1.1v-2.141a13.373,13.373,0,0,0-1.947-.17,3.07,3.07,0,0,0-3.286,3.384v1.917H1326v2.514h2.209v6.079a8.795,8.795,0,0,0,2.719,0v-6.079Z" transform="translate(207 -231.212)" />
+                        </g></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="instagram">
+                        <g id="Group_522" data-name="Group 522" transform="translate(-1554 -63)">
+                          <rect id="Rectangle_163" data-name="Rectangle 163" width="16" height="16" transform="translate(1554 63)" fill="none" />
+                          <path id="Path_2496" data-name="Path 2496" d="M-73.6,136.5c-1.9,0-2.14.008-2.886.042a5.286,5.286,0,0,0-1.7.313,3.4,3.4,0,0,0-1.241.78,3.356,3.356,0,0,0-.809,1.2,4.712,4.712,0,0,0-.325,1.636c-.032.719-.044.948-.044,2.783s.008,2.06.044,2.783a4.785,4.785,0,0,0,.325,1.636,3.257,3.257,0,0,0,.809,1.2,3.454,3.454,0,0,0,1.241.78,5.309,5.309,0,0,0,1.7.313c.745.034.983.042,2.886.042s2.136-.008,2.886-.042a5.337,5.337,0,0,0,1.7-.313,3.439,3.439,0,0,0,1.237-.78,3.357,3.357,0,0,0,.809-1.2,4.881,4.881,0,0,0,.325-1.636c.032-.719.044-.948.044-2.783s-.008-2.06-.044-2.783a4.881,4.881,0,0,0-.325-1.636,3.306,3.306,0,0,0-.809-1.2,3.472,3.472,0,0,0-1.241-.78,5.335,5.335,0,0,0-1.7-.313c-.745-.034-.983-.042-2.882-.042Zm-.626,1.215h.626c1.867,0,2.089.008,2.826.038a4.055,4.055,0,0,1,1.3.233,2.185,2.185,0,0,1,.8.5,2.092,2.092,0,0,1,.523.776,3.647,3.647,0,0,1,.242,1.254c.032.711.04.925.04,2.725s-.008,2.014-.04,2.725a3.67,3.67,0,0,1-.242,1.254,2.092,2.092,0,0,1-.523.776,2.153,2.153,0,0,1-.8.5,4.029,4.029,0,0,1-1.3.233c-.737.031-.959.038-2.826.038s-2.089-.008-2.826-.038a4.054,4.054,0,0,1-1.3-.233,2.185,2.185,0,0,1-.8-.5,2.092,2.092,0,0,1-.523-.776,3.648,3.648,0,0,1-.242-1.254c-.032-.711-.04-.925-.04-2.725s.008-2.014.04-2.725a3.67,3.67,0,0,1,.242-1.254,2.092,2.092,0,0,1,.523-.776,2.184,2.184,0,0,1,.8-.5,4.03,4.03,0,0,1,1.3-.233c.646-.031.9-.038,2.2-.038Zm4.36,1.12a.826.826,0,0,0-.84.81.826.826,0,0,0,.84.81.826.826,0,0,0,.84-.81.826.826,0,0,0-.84-.81Zm-3.734.948a3.528,3.528,0,0,0-3.591,3.463,3.528,3.528,0,0,0,3.591,3.463,3.528,3.528,0,0,0,3.591-3.463,3.526,3.526,0,0,0-3.591-3.463Zm0,1.215a2.289,2.289,0,0,1,2.331,2.247,2.289,2.289,0,0,1-2.331,2.247,2.289,2.289,0,0,1-2.331-2.247A2.289,2.289,0,0,1-73.6,141Z" transform="translate(1635.6 -72.5)" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="x">
+                        <g id="Group_521" data-name="Group 521" transform="translate(-1529 -82)">
+                          <rect id="Rectangle_161" data-name="Rectangle 161" width="16" height="16" transform="translate(1529 82)" fill="none" />
+                          <path id="Path_2495" data-name="Path 2495" d="M8.725,5.172,13.561,0H11.724l-3.8,4.06L5.022,0H0L5.084,7.1,0,12.54H1.836L5.881,8.214l3.1,4.326H14ZM2.588,1.33H4.339l7.073,9.88H9.661Z" transform="translate(1530 84)" />
+                        </g></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="youtube">
+                        <g id="Group_520" data-name="Group 520" transform="translate(-1554 -82)">
+                          <rect id="Rectangle_162" data-name="Rectangle 162" width="16" height="16" transform="translate(1554 82)" fill="none" />
+                          <path id="Path_2494" data-name="Path 2494" d="M972.232,20.031H961.921a1.845,1.845,0,0,0-1.845,1.844v6.449a1.844,1.844,0,0,0,1.845,1.844h10.311a1.844,1.844,0,0,0,1.844-1.844V21.875a1.845,1.845,0,0,0-1.844-1.844m-3.5,5.514-2.867,1.433a.5.5,0,0,1-.72-.444V23.667a.5.5,0,0,1,.72-.445l2.867,1.433a.5.5,0,0,1,0,.889" transform="translate(594.924 64.969)" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -59,7 +102,7 @@
       <div class="uk-navbar-center visible-sticky">
         <a href="/"><img src="./images/logo-grojec24.png" width="200" height="46" alt="" /></a>
       </div>
-      <div class="uk-navbar-right">
+      <div class="uk-navbar-right uk-visible@s">
         <ul class="uk-navbar-nav">
           <li>
             <a href="#"

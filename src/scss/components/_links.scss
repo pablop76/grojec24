@@ -1,0 +1,11 @@
+a.uk-link-heading{
+    &:hover{
+      color: $color-accent-2;
+    }
+  }
+  a.uk-link-text{
+    color:$color-accent-2;
+    &:hover{
+      color: $color-darkblue;
+    }
+  }

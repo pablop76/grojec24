@@ -1,26 +1,36 @@
 #navbar{
   background-color:$color-accent-1;
 }
+.uk-navbar-item,
+.uk-navbar-nav > li > a,
+.uk-navbar-toggle {
+  min-height: 21px;
+}
 .navbar-top {
   .uk-navbar-nav {
-    font-size: 0.6875rem;
+    li{
+      font-size: 0.6875rem;
+      line-height:  0.6875rem;
+    }
   }
 }
-.uk-navbar-nav {
-  & > li.uk-active > a,& > li>a:hover {
-    color: $color-accent-2;
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    &:before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 120%;
-      height: 3px;
-      bottom: -12px;
-      left: -10%;
-      background-color: $color-accent-2;
-      animation: stretch .5s forwards;
+#navbar-desktop {
+  .uk-navbar-nav {
+    & > li.uk-active > a,& > li>a:hover {
+      color: $color-accent-2;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 120%;
+        height: 3px;
+        bottom: -12px;
+        left: -10%;
+        background-color: $color-accent-2;
+        animation: stretch .5s forwards;
+      }
     }
   }
 }
