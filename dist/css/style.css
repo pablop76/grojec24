@@ -298,13 +298,15 @@ a.uk-link-text:hover {
   color: #2a81ac;
 }
 
-.slider a.uk-slidenav {
-  background-color: #f3f3f3;
-  margin: 0;
-  padding: 15px 20px;
-}
-.slider a.uk-slidenav.uk-icon {
-  color: #202020;
+@media (min-width: 640px) {
+  .slider a.uk-slidenav {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 15px 20px;
+  }
+  .slider a.uk-slidenav.uk-icon {
+    color: #202020;
+  }
 }
 .slider img {
   aspect-ratio: 16/9;

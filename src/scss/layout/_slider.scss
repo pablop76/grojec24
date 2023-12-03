@@ -1,12 +1,15 @@
 .slider {
-  a.uk-slidenav {
-    background-color: $color-accent-1;
-    margin: 0;
-    padding: 15px 20px;
-    &.uk-icon {
-      color: $color-divider-header;
+  @media (min-width: 640px){
+    a.uk-slidenav {
+      background-color: $color-accent-1;
+      margin: 0;
+      padding: 15px 20px;
+      &.uk-icon {
+        color: $color-divider-header;
+      }
     }
   }
+
   img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
