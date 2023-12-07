@@ -37,6 +37,11 @@ h6 {
     padding-left: 0 !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .margin-remove-top-s {
+    margin-top: 0 !important;
+  }
+}
 .header-section-title-xl {
   font-size: 40px;
   line-height: 44px;
