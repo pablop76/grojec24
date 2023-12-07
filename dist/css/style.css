@@ -267,6 +267,11 @@ a.uk-link-text:hover {
     gap: 25px;
   }
 }
+@media (max-width: 640px) {
+  hr.sticky {
+    display: none;
+  }
+}
 .news-ticker {
   background-color: #f3f3f3;
 }
