@@ -1,0 +1,16 @@
+.uk-pagination{
+    &>*>* {
+        justify-content: center;
+        padding: 0;
+    }
+    a{
+        width: 64px;
+        height: 64px;
+        &:hover{
+            background-color: #F3F3F3;
+        }
+    }
+    .uk-active{
+        background-color: #F3F3F3;
+    }
+}

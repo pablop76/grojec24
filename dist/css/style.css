@@ -22,6 +22,15 @@ h6 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 30px;
+}
+
+h4.uk-comment-title {
+  font-size: 17px;
+  line-height: 20px;
+}
+
 @media screen and (min-width: 639.9px) {
   .padding-remove-top-s {
     padding-top: 0 !important;
@@ -95,6 +104,13 @@ h6 {
   padding-top: 30px;
 }
 
+.uk-price {
+  color: #2a81ac;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Unna", serif;
+}
+
 .uk-logo {
   margin-top: 20px;
 }
@@ -104,6 +120,21 @@ h6 {
     width: 200px;
   }
 }
+.uk-pagination > * > * {
+  justify-content: center;
+  padding: 0;
+}
+.uk-pagination a {
+  width: 64px;
+  height: 64px;
+}
+.uk-pagination a:hover {
+  background-color: #F3F3F3;
+}
+.uk-pagination .uk-active {
+  background-color: #F3F3F3;
+}
+
 .uk-label-danger {
   background-color: #f20764;
   letter-spacing: 3.3px;
@@ -149,6 +180,19 @@ hr.divider-fat {
 }
 
 .uk-button-text {
+  color: #2a81ac;
+}
+
+.uk-button {
+  letter-spacing: 2.4px;
+}
+
+.uk-button-primary {
+  background-color: #2a81ac;
+}
+.uk-button-primary:hover {
+  border: 1px solid #2a81ac;
+  background-color: #fff;
   color: #2a81ac;
 }
 
@@ -202,6 +246,23 @@ a.uk-link-text {
 }
 a.uk-link-text:hover {
   color: #062738;
+}
+
+.back-to-top {
+  visibility: hidden;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(6, 39, 56, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.back-to-top:hover {
+  color: #fff;
 }
 
 #navbar {
@@ -381,6 +442,10 @@ a.uk-link-text:hover {
 #offcanvas-nav-primary .uk-nav-primary {
   font-size: 1.2rem;
   line-height: 1.2;
+}
+
+.uk-text-transform-initial {
+  text-transform: initial;
 }
 
 #footer {

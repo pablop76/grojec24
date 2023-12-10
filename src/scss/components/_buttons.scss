@@ -8,3 +8,14 @@
 .uk-button-text {
   color: $color-accent-2;
 }
+.uk-button{
+  letter-spacing: 2.4px;
+}
+.uk-button-primary{
+  background-color: $color-accent-2;
+  &:hover{
+    border: 1px solid $color-accent-2;
+    background-color: #fff;
+    color: $color-accent-2;;
+  }
+}

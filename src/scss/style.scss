@@ -4,6 +4,7 @@
 @import "./base/my_classes";
 @import "./themes/default";
 @import "./components/logo";
+@import "./components/pagination";
 @import "./components/label";
 @import "./components/divider";
 @import "./components/bullet";
@@ -14,10 +15,12 @@
 @import "./components/overlay-photo-video-icon";
 @import "./components/search-input";
 @import "./components/links";
+@import "./components/back-to-top";
 @import "./layout/navbar";
 @import "./layout/navigation";
 @import "./layout/news-ticker";
 @import "./layout/slider";
 @import "./layout/tab";
 @import "./layout/offcanvas-bar";
+@import "./layout/article-image-left-aside";
 @import "./layout/footer";

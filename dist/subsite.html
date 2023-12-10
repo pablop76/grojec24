@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aktualności</title>
+    <meta name= "description" content="Grojec24.net - największy portal informacyjny powiatu grójeckiego. Najnowsze informacje z gmin: Grójec, Belsk Duży, Błędów, Chynów, Goszczyn, Jasieniec, Mogielnica, Nowe Miasto nad Pilicą, Pniewy, Warka.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Unna:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+<!-- sekcja topbar -->
+<div class="navbar-container-sticky" uk-sticky="start: 200; animation: uk-animation-slide-top; media:@m">
+  <nav uk-sticky="show-on-up: true; animation: uk-animation-slide-top" id="navbar" class="navbar-top uk-navbar-container uk-navbar-transparent uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <div data-uk-navbar data-uk-grid>
+      <div class="uk-navbar-left uk-width-1-2@s">
+        <a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a>
+        <div class="nav-overlay uk-navbar-left">
+          <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        </div>
+
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+          <div class="uk-navbar-item uk-width-auto">
+            <form class="uk-search uk-search-navbar uk-width-1-1">
+              <input class="uk-search-input" type="search" placeholder="Szukaj" aria-label="Search" autofocus />
+            </form>
+          </div>
+
+          <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        </div>
+        <ul class="uk-navbar-nav uk-flex uk-flex-middle uk-text-uppercase nav-overlay">
+          <li>Środa</li>
+          <li>|</li>
+          <li><time datetime="2023-11-22T19:00">22 Listopada 2023</time></li>
+        </ul>
+        <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
+          <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+              <li>
+                <div class="uk-margin-medium">
+                  <a href="#"><img class="logo" src="./images/logo-grojec24-white.png" alt="logo Grójec" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="uk-margin-medium">
+                  <form class="uk-search uk-search-default">
+                    <span data-uk-search-icon></span>
+                    <input class="uk-search-input" type="search" placeholder="Szukaj" aria-label="Search" />
+                  </form>
+                </div>
+              </li>
+              <li><hr class="uk-margin-top"></li>
+              <li class="uk-active"><a href="subsite.html">Aktualności</a></li>
+              <li><a href="#">Sport</a></li>
+              <li><a href="#">Kultura</a></li>
+              <li><a href="#">O Grójcu</a></li>
+              <li><a href="#">Po godzinach</a></li>
+              <li><hr class="uk-margin-top"></li>
+              <li><a href="#">Grójec w obiektywie</a></li>
+              <li><a href="#">TVGrójec24</a></li>
+              <li><a href="#">Ogłoszenia</a></li>
+              <li><a href="#">Praca</a></li>
+              <li><hr class="uk-margin-top" ></li>
+              <li><a href="#">Alarm24</a></li>
+              <li><a href="#">Reklama</a></li>
+              <li><a href="#">Redakcja</a></li>
+              <li><hr class="uk-margin-top"></li>
+              <li>
+                <ul class="uk-navbar-nav uk-flex-center">
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="facebook">
+                        <g id="Group_519" data-name="Group 519" transform="translate(-1529 -63)">
+                          <rect id="Rectangle_160" data-name="Rectangle 160" width="16" height="16" transform="translate(1529 63)" fill="none" />
+                          <path id="Path_2493" data-name="Path 2493" d="M1332.954,303.027l.386-2.514h-2.412v-1.632a1.257,1.257,0,0,1,1.417-1.359h1.1v-2.141a13.373,13.373,0,0,0-1.947-.17,3.07,3.07,0,0,0-3.286,3.384v1.917H1326v2.514h2.209v6.079a8.795,8.795,0,0,0,2.719,0v-6.079Z" transform="translate(207 -231.212)" />
+                        </g></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="instagram">
+                        <g id="Group_522" data-name="Group 522" transform="translate(-1554 -63)">
+                          <rect id="Rectangle_163" data-name="Rectangle 163" width="16" height="16" transform="translate(1554 63)" fill="none" />
+                          <path id="Path_2496" data-name="Path 2496" d="M-73.6,136.5c-1.9,0-2.14.008-2.886.042a5.286,5.286,0,0,0-1.7.313,3.4,3.4,0,0,0-1.241.78,3.356,3.356,0,0,0-.809,1.2,4.712,4.712,0,0,0-.325,1.636c-.032.719-.044.948-.044,2.783s.008,2.06.044,2.783a4.785,4.785,0,0,0,.325,1.636,3.257,3.257,0,0,0,.809,1.2,3.454,3.454,0,0,0,1.241.78,5.309,5.309,0,0,0,1.7.313c.745.034.983.042,2.886.042s2.136-.008,2.886-.042a5.337,5.337,0,0,0,1.7-.313,3.439,3.439,0,0,0,1.237-.78,3.357,3.357,0,0,0,.809-1.2,4.881,4.881,0,0,0,.325-1.636c.032-.719.044-.948.044-2.783s-.008-2.06-.044-2.783a4.881,4.881,0,0,0-.325-1.636,3.306,3.306,0,0,0-.809-1.2,3.472,3.472,0,0,0-1.241-.78,5.335,5.335,0,0,0-1.7-.313c-.745-.034-.983-.042-2.882-.042Zm-.626,1.215h.626c1.867,0,2.089.008,2.826.038a4.055,4.055,0,0,1,1.3.233,2.185,2.185,0,0,1,.8.5,2.092,2.092,0,0,1,.523.776,3.647,3.647,0,0,1,.242,1.254c.032.711.04.925.04,2.725s-.008,2.014-.04,2.725a3.67,3.67,0,0,1-.242,1.254,2.092,2.092,0,0,1-.523.776,2.153,2.153,0,0,1-.8.5,4.029,4.029,0,0,1-1.3.233c-.737.031-.959.038-2.826.038s-2.089-.008-2.826-.038a4.054,4.054,0,0,1-1.3-.233,2.185,2.185,0,0,1-.8-.5,2.092,2.092,0,0,1-.523-.776,3.648,3.648,0,0,1-.242-1.254c-.032-.711-.04-.925-.04-2.725s.008-2.014.04-2.725a3.67,3.67,0,0,1,.242-1.254,2.092,2.092,0,0,1,.523-.776,2.184,2.184,0,0,1,.8-.5,4.03,4.03,0,0,1,1.3-.233c.646-.031.9-.038,2.2-.038Zm4.36,1.12a.826.826,0,0,0-.84.81.826.826,0,0,0,.84.81.826.826,0,0,0,.84-.81.826.826,0,0,0-.84-.81Zm-3.734.948a3.528,3.528,0,0,0-3.591,3.463,3.528,3.528,0,0,0,3.591,3.463,3.528,3.528,0,0,0,3.591-3.463,3.526,3.526,0,0,0-3.591-3.463Zm0,1.215a2.289,2.289,0,0,1,2.331,2.247,2.289,2.289,0,0,1-2.331,2.247,2.289,2.289,0,0,1-2.331-2.247A2.289,2.289,0,0,1-73.6,141Z" transform="translate(1635.6 -72.5)" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="x">
+                        <g id="Group_521" data-name="Group 521" transform="translate(-1529 -82)">
+                          <rect id="Rectangle_161" data-name="Rectangle 161" width="16" height="16" transform="translate(1529 82)" fill="none" />
+                          <path id="Path_2495" data-name="Path 2495" d="M8.725,5.172,13.561,0H11.724l-3.8,4.06L5.022,0H0L5.084,7.1,0,12.54H1.836L5.881,8.214l3.1,4.326H14ZM2.588,1.33H4.339l7.073,9.88H9.661Z" transform="translate(1530 84)" />
+                        </g></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="youtube">
+                        <g id="Group_520" data-name="Group 520" transform="translate(-1554 -82)">
+                          <rect id="Rectangle_162" data-name="Rectangle 162" width="16" height="16" transform="translate(1554 82)" fill="none" />
+                          <path id="Path_2494" data-name="Path 2494" d="M972.232,20.031H961.921a1.845,1.845,0,0,0-1.845,1.844v6.449a1.844,1.844,0,0,0,1.845,1.844h10.311a1.844,1.844,0,0,0,1.844-1.844V21.875a1.845,1.845,0,0,0-1.844-1.844m-3.5,5.514-2.867,1.433a.5.5,0,0,1-.72-.444V23.667a.5.5,0,0,1,.72-.445l2.867,1.433a.5.5,0,0,1,0,.889" transform="translate(594.924 64.969)" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="uk-navbar-center visible-sticky">
+        <a href="/"><img src="./images/logo-grojec24.png" width="200" height="46" alt="" /></a>
+      </div>
+      <div class="uk-navbar-right uk-visible@s">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="facebook">
+                <g id="Group_519" data-name="Group 519" transform="translate(-1529 -63)">
+                  <rect id="Rectangle_160" data-name="Rectangle 160" width="16" height="16" transform="translate(1529 63)" fill="none" />
+                  <path id="Path_2493" data-name="Path 2493" d="M1332.954,303.027l.386-2.514h-2.412v-1.632a1.257,1.257,0,0,1,1.417-1.359h1.1v-2.141a13.373,13.373,0,0,0-1.947-.17,3.07,3.07,0,0,0-3.286,3.384v1.917H1326v2.514h2.209v6.079a8.795,8.795,0,0,0,2.719,0v-6.079Z" transform="translate(207 -231.212)" />
+                </g></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="instagram">
+                <g id="Group_522" data-name="Group 522" transform="translate(-1554 -63)">
+                  <rect id="Rectangle_163" data-name="Rectangle 163" width="16" height="16" transform="translate(1554 63)" fill="none" />
+                  <path id="Path_2496" data-name="Path 2496" d="M-73.6,136.5c-1.9,0-2.14.008-2.886.042a5.286,5.286,0,0,0-1.7.313,3.4,3.4,0,0,0-1.241.78,3.356,3.356,0,0,0-.809,1.2,4.712,4.712,0,0,0-.325,1.636c-.032.719-.044.948-.044,2.783s.008,2.06.044,2.783a4.785,4.785,0,0,0,.325,1.636,3.257,3.257,0,0,0,.809,1.2,3.454,3.454,0,0,0,1.241.78,5.309,5.309,0,0,0,1.7.313c.745.034.983.042,2.886.042s2.136-.008,2.886-.042a5.337,5.337,0,0,0,1.7-.313,3.439,3.439,0,0,0,1.237-.78,3.357,3.357,0,0,0,.809-1.2,4.881,4.881,0,0,0,.325-1.636c.032-.719.044-.948.044-2.783s-.008-2.06-.044-2.783a4.881,4.881,0,0,0-.325-1.636,3.306,3.306,0,0,0-.809-1.2,3.472,3.472,0,0,0-1.241-.78,5.335,5.335,0,0,0-1.7-.313c-.745-.034-.983-.042-2.882-.042Zm-.626,1.215h.626c1.867,0,2.089.008,2.826.038a4.055,4.055,0,0,1,1.3.233,2.185,2.185,0,0,1,.8.5,2.092,2.092,0,0,1,.523.776,3.647,3.647,0,0,1,.242,1.254c.032.711.04.925.04,2.725s-.008,2.014-.04,2.725a3.67,3.67,0,0,1-.242,1.254,2.092,2.092,0,0,1-.523.776,2.153,2.153,0,0,1-.8.5,4.029,4.029,0,0,1-1.3.233c-.737.031-.959.038-2.826.038s-2.089-.008-2.826-.038a4.054,4.054,0,0,1-1.3-.233,2.185,2.185,0,0,1-.8-.5,2.092,2.092,0,0,1-.523-.776,3.648,3.648,0,0,1-.242-1.254c-.032-.711-.04-.925-.04-2.725s.008-2.014.04-2.725a3.67,3.67,0,0,1,.242-1.254,2.092,2.092,0,0,1,.523-.776,2.184,2.184,0,0,1,.8-.5,4.03,4.03,0,0,1,1.3-.233c.646-.031.9-.038,2.2-.038Zm4.36,1.12a.826.826,0,0,0-.84.81.826.826,0,0,0,.84.81.826.826,0,0,0,.84-.81.826.826,0,0,0-.84-.81Zm-3.734.948a3.528,3.528,0,0,0-3.591,3.463,3.528,3.528,0,0,0,3.591,3.463,3.528,3.528,0,0,0,3.591-3.463,3.526,3.526,0,0,0-3.591-3.463Zm0,1.215a2.289,2.289,0,0,1,2.331,2.247,2.289,2.289,0,0,1-2.331,2.247,2.289,2.289,0,0,1-2.331-2.247A2.289,2.289,0,0,1-73.6,141Z" transform="translate(1635.6 -72.5)" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="x">
+                <g id="Group_521" data-name="Group 521" transform="translate(-1529 -82)">
+                  <rect id="Rectangle_161" data-name="Rectangle 161" width="16" height="16" transform="translate(1529 82)" fill="none" />
+                  <path id="Path_2495" data-name="Path 2495" d="M8.725,5.172,13.561,0H11.724l-3.8,4.06L5.022,0H0L5.084,7.1,0,12.54H1.836L5.881,8.214l3.1,4.326H14ZM2.588,1.33H4.339l7.073,9.88H9.661Z" transform="translate(1530 84)" />
+                </g></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="youtube">
+                <g id="Group_520" data-name="Group 520" transform="translate(-1554 -82)">
+                  <rect id="Rectangle_162" data-name="Rectangle 162" width="16" height="16" transform="translate(1554 82)" fill="none" />
+                  <path id="Path_2494" data-name="Path 2494" d="M972.232,20.031H961.921a1.845,1.845,0,0,0-1.845,1.844v6.449a1.844,1.844,0,0,0,1.845,1.844h10.311a1.844,1.844,0,0,0,1.844-1.844V21.875a1.845,1.845,0,0,0-1.844-1.844m-3.5,5.514-2.867,1.433a.5.5,0,0,1-.72-.444V23.667a.5.5,0,0,1,.72-.445l2.867,1.433a.5.5,0,0,1,0,.889" transform="translate(594.924 64.969)" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- sekcja mainbar -->
+  <div class="logo-container uk-text-center">
+  <a class="uk-logo" href="/">
+    <img src="./images/logo-grojec24.png" width="414" height="106" alt="logo Grójec24" />
+  </a>
+</div>
+<hr class="uk-margin-small-bottom sticky" />
+<nav id="navbar-desktop" class="uk-navbar-container uk-navbar-transparent uk-visible@s">
+  <div class="uk-container uk-container-large">
+    <div data-uk-grid data-uk-navbar class="uk-subnav-divider uk-flex">
+      <div>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="subsite.html">Aktualności</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Kultura</a></li>
+            <li><a href="#">O Grójcu</a></li>
+            <li><a href="#">Po godzinach</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li><a href="#">Grójec w obiektywie</a></li>
+            <li><a href="#">TVGrójec24</a></li>
+            <li><a href="#">Ogłoszenia</a></li>
+            <li><a href="#">Praca</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li><a href="#">Alarm24</a></li>
+            <li><a href="#">Reklama</a></li>
+            <li><a href="#">Redakcja</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<hr class="uk-margin-small-top sticky" />
+
+</div>
+<!-- sekcja banner -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large"><div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: 70:13; animation: push; autoplay: true">
+  <ul class="uk-slideshow-items">
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<!-- sekcja tytuł aktualności -->
+<div class="uk-section uk-padding-small padding-top-title-seciton">
+  <div class="uk-container uk-container-large"><hr class="divider-fat" />
+<h2 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top header-section-title-xl"><a class="uk-link-heading" href="#">Aktualności</a></h2>
+</div>
+</div>
+<hr />
+<!--  sekcja pilne -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <!--  sekcja pilne -->
+    <div class="uk-grid-small" data-uk-grid>
+  <div class="uk-width-3-4@m">
+    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+      <div class="uk-card-media-left uk-cover-container">
+        <img src="./images/top_foto.jpg" alt="" data-uk-cover />
+        <canvas width="600" height="400"></canvas>
+      </div>
+      <div>
+        <div class="uk-card-body padding-remove-top-s">
+          <span class="uk-label uk-label-danger">Pilne</span>
+          <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+          <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas eget purus eu pulvinar. Nulla ultricies vestibulum lacus, at tristique metus...</p>
+          <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+  <div class="uk-width-expand@m">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<hr />
+<!-- sekcja banner -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large"><div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: 70:13; animation: push; autoplay: true">
+  <ul class="uk-slideshow-items">
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<hr />
+<!-- content and aside grid -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <div class="uk-flex-first@s uk-grid-small uk-flex-center" data-uk-grid>
+      <div class="uk-width-3-4@s"><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/aktualnosci_foto.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Wybory 2023. W Grójcu Koalicja Obywatelska wygrywa z PiS. Frekwencja ponad 80 proc.</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div></div>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@m"><div class="">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div></div>
+    </div>
+  </div>
+</div>
+<hr />
+<!-- sekcja banner -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large"><div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: 70:13; animation: push; autoplay: true">
+  <ul class="uk-slideshow-items">
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<hr />
+<!-- content and aside grid -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <div class="uk-flex-first@s uk-grid-small uk-flex-center" data-uk-grid>
+      <div class="uk-width-3-4@s">
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/ciezarowka.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">ITD zatrzymała pod Grójcem zbyt ciężką ciężarówkę</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/blaszczak.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">W Nowym Mieście nad Pilicą rusza budowa 8. Dywizji Piechoty Armii Krajowej</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/wypadek.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Dachowanie na obwodnicy Grójca. Trasa S7 zablokowana</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/zebranie.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Nie chcą wieży 5G w Kobylinie</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/policja.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <!-- sekcja banner -->
+        <div class="uk-section uk-padding-small">
+          <div class="uk-container uk-container-large"><div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: 70:13; animation: push; autoplay: true">
+  <ul class="uk-slideshow-items">
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+    <li>
+      <img src="./images/reklama-horyzontalna.jpg" alt="" data-uk-cover />
+    </li>
+  </ul>
+</div>
+</div>
+        </div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/ciezarowka.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">ITD zatrzymała pod Grójcem zbyt ciężką ciężarówkę</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/blaszczak.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">W Nowym Mieście nad Pilicą rusza budowa 8. Dywizji Piechoty Armii Krajowej</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/wypadek.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Dachowanie na obwodnicy Grójca. Trasa S7 zablokowana</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/zebranie.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Nie chcą wieży 5G w Kobylinie</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/policja.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/zebranie.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/blaszczak.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/wypadek.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/policja.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="images/ciezarowka.jpg" alt="" data-uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body padding-remove-top-s">
+            <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Aktualności</a></p>
+            <h2 class="uk-card-title uk-margin-remove-top header-article-title-l"><a class="uk-link-heading" href="#">Policjanci z Grójca poszukują właściciela pieniędzy</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc tortor, dapibus et ex non, vehicula lacinia urna. Praesent est orci, varius nec consequat ac, sagittis ac elit. Sed sit amet augue at libero imperdiet imperdiet at a libero. Aenean tempor tincidunt enim ut molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+            <p class="uk-article-meta"><span class="uk-icon-link" uk-icon="comment"></span> 5 Komentarzy | <time datetime="2023-11-23T19:00">23 Listopada 2023</time></p>
+          </div>
+    </div>
+</div>
+        <hr />
+        <ul class="uk-pagination uk-flex-center" data-uk-margin>
+    <li><a href="#"><span uk-pagination-previous></span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li class="uk-active"><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li class="uk-disabled"><span>…</span></li>
+    <li><a href="#">16</a></li>
+    <li><a href="#"><span uk-pagination-next></span></a></li>
+</ul>
+      </div>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@m section-aside">
+        <div class="">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+        <!-- sekcja tytuł aktualności -->
+        <div class="uk-section uk-padding-remove-left padding-top-title-seciton">
+          <div class="uk-container uk-container-large">
+            <hr class="divider-fat" />
+<h3 class="uk-heading-bullet uk-heading-bullet-only uk-margin-small-top"><a class="uk-link-heading" href="#">Popularne</a></h3>
+ 
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-1.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kategoria</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">25 latek z powiatu grójeckiego dał się namówić na sexting</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-2.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kultura</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Przerwa w grójeckim kinie. Później jeszcze lepsza jakość!</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-3.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kategoria</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Zderzenie trzech samochodów na wiadukcie Mogielnicka</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-4.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">O grójcu</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Nowy pomnik pod Grójcem. Upamiętnia tragedię sprzed 18 lat</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-5.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kategoria</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+ 
+            <div class="">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> <hr class="divider-fat" />
+<h3 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top"><a class="uk-link-heading" href="#">Najnowsze</a></h3>
+ 
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-5.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kultura</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Przerwa w grójeckim kinie. Później jeszcze lepsza jakość!</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-6.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kategoria</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Zderzenie trzech samochodów na wiadukcie Mogielnicka</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-7.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">O grójcu</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Nowy pomnik pod Grójcem. Upamiętnia tragedię sprzed 18 lat</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-8.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kategoria</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="./images/aside-9.jpg" width="800" height="200" alt="" />
+  </div>
+  <div>
+    <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+      <p class="uk-category-article"><a class="category-small uk-button uk-button-text" href="#">Kategoria</a></p>
+      <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej</a></h3>
+      <p class="uk-text-meta uk-article-meta">Artykuł Sponsorowany</p>
+    </div>
+  </div>
+</div>
+
+            <div class="">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>  
+            <hr class="divider-fat" />
+<h3 class="uk-heading-bullet uk-heading-bullet-lightblue uk-margin-small-top"><a class="uk-link-heading" href="#">Ostatnie komentarze</a></h3>
+
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article>  
+            <hr>
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article> 
+            <hr>
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article> 
+            <hr>
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article> 
+            <hr>
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article> 
+            <hr>
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article> 
+            <hr>
+            <article class="uk-comment">
+    <header class="uk-comment-header">
+        <h4 class="uk-comment-title">25-latek z powiatu grójeckiego dał się 
+            namówić na sexting</h4>
+    </header>
+    <div class="uk-comment-body">
+        <span class="uk-icon-link" uk-icon="comment"></span>
+        <a class="uk-link-reset uk-text-bold" href="#">Autor</a>:
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span>
+        <p class="uk-article-meta" href="#">1 godzinę temu</p>
+    </>
+</article> 
+            <br>
+            <div class="">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+            <hr class="divider-fat" />
+<h3 class="uk-heading-bullet uk-heading-bullet uk-margin-small-top"><a class="uk-link-heading" href="#">Ogłoszenia</a></h3>
+ 
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./images/ogloszenie-1.jpg" width="800" height="200" alt="" />
+    </div>
+    <div>
+      <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+        <p class="uk-category-article uk-text-transform-initial"><a class="category-small uk-text-transform-initial uk-button uk-button-text" href="#">Kultura</a></p>
+        <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Przerwa w grójeckim kinie. Później jeszcze lepsza jakość!</a></h3>
+        <p class="uk-text-meta uk-article-meta"><span class="uk-price">100zł</span></p>
+      </div>
+    </div>
+  </div>
+  
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./images/ogloszenie-1.jpg" width="800" height="200" alt="" />
+    </div>
+    <div>
+      <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+        <p class="uk-category-article uk-text-transform-initial"><a class="category-small uk-text-transform-initial uk-button uk-button-text" href="#">Kategoria</a></p>
+        <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Zderzenie trzech samochodów na wiadukcie Mogielnicka</a></h3>
+        <p class="uk-text-meta uk-article-meta"><span class="uk-price">200zł</span></p>
+      </div>
+    </div>
+  </div>
+  
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./images/ogloszenie-1.jpg" width="800" height="200" alt="" />
+    </div>
+    <div>
+      <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+        <p class="uk-category-article uk-text-transform-initial"><a class="category-small uk-text-transform-initial uk-button uk-button-text" href="#">O grójcu</a></p>
+        <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Nowy pomnik pod Grójcem. Upamiętnia tragedię sprzed 18 lat</a></h3>
+        <p class="uk-text-meta uk-article-meta"><span class="uk-price">10zł</span></p>
+      </div>
+    </div>
+  </div>
+  
+            <hr />
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./images/ogloszenie-1.jpg" width="800" height="200" alt="" />
+    </div>
+    <div>
+      <div class="uk-card-body uk-padding-small uk-padding-remove-right padding-remove-top-s padding-remove-bottom-s">
+        <p class="uk-category-article uk-text-transform-initial"><a class="category-small uk-text-transform-initial uk-button uk-button-text" href="#">Kategoria</a></p>
+        <h3 class="uk-card-title uk-margin-remove-top header-article-title-s padding-remove-bottom-s"><a class="uk-link-heading" href="#">Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej</a></h3>
+        <p class="uk-text-meta uk-article-meta"><span class="uk-price">60zł</span></p>
+      </div>
+    </div>
+  </div>
+  
+            <p class="uk-text-center" data-uk-margin>
+                <a href="#"><button class="uk-button uk-button-primary category-small uk-text-bold">Dodaj ogłoszenie <span uk-icon="arrow-up"></span></button></a>
+            </p>
+            <div class="">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true;autoplay-interval:3000; ratio: 2:3; animation: push">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove"><a class="uk-link-heading" href="#">Możliwość ustawienia wysokości</a></h3>
+            <p class="uk-margin-remove">Aktualnie min-height 450, max-height 600</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Możliwość ustawienia ratio</h3>
+            <p class="uk-margin-remove">Aktualnie brak</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/reklama-wertykalna.jpg" alt="" data-uk-cover />
+          <div class="uk-position-center uk-position-small uk-text-center uk-light">
+            <h3 class="uk-margin-remove">Ustaw jeden slide</h3>
+            <p class="uk-margin-remove">Jeżeli nie chcesz efektu slidera</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a uk-icon="chevron-up" href="#" aria-label="Back to top" data-uk-scroll class="back-to-top"></a>
+
+<!-- sekcja footer -->
+<footer id="footer">
+  <div class="uk-section uk-background-cover" style="background-image: url('./images/background-footer.jpg')">
+    <div class="uk-container uk-container-large">
+      <div class="uk-grid-match" data-uk-grid>
+        <div class="uk-width-2-5@m">
+          <div class="uk-card uk-card-body uk-light">
+            <img class="logo" src="./images/logo-grojec24-white.png" alt="logo" width="240" height="61" />
+            <p>
+              Grojec24.net - największy portal informacyjny<br />
+              Grójca i Powiatu Grójeckiego.
+            </p>
+            <p>
+              Od 2013 roku dostarczamy najświeższe<br />
+              wiadomości z Grójca i okolic. Każdego miesiąca<br />
+              gościmy na ekranach tysięcy mieszkańców.
+            </p>
+            <ul class="uk-navbar-nav">
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="facebook">
+                    <g id="Group_519" data-name="Group 519" transform="translate(-1529 -63)">
+                      <rect id="Rectangle_160" data-name="Rectangle 160" width="16" height="16" transform="translate(1529 63)" fill="none"/>
+                      <path id="Path_2493" data-name="Path 2493" d="M1332.954,303.027l.386-2.514h-2.412v-1.632a1.257,1.257,0,0,1,1.417-1.359h1.1v-2.141a13.373,13.373,0,0,0-1.947-.17,3.07,3.07,0,0,0-3.286,3.384v1.917H1326v2.514h2.209v6.079a8.795,8.795,0,0,0,2.719,0v-6.079Z" transform="translate(207 -231.212)"/>
+                    </g>
+                  </svg></a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="instagram">
+                    <g id="Group_522" data-name="Group 522" transform="translate(-1554 -63)">
+                      <rect id="Rectangle_163" data-name="Rectangle 163" width="16" height="16" transform="translate(1554 63)" fill="none"/>
+                      <path id="Path_2496" data-name="Path 2496" d="M-73.6,136.5c-1.9,0-2.14.008-2.886.042a5.286,5.286,0,0,0-1.7.313,3.4,3.4,0,0,0-1.241.78,3.356,3.356,0,0,0-.809,1.2,4.712,4.712,0,0,0-.325,1.636c-.032.719-.044.948-.044,2.783s.008,2.06.044,2.783a4.785,4.785,0,0,0,.325,1.636,3.257,3.257,0,0,0,.809,1.2,3.454,3.454,0,0,0,1.241.78,5.309,5.309,0,0,0,1.7.313c.745.034.983.042,2.886.042s2.136-.008,2.886-.042a5.337,5.337,0,0,0,1.7-.313,3.439,3.439,0,0,0,1.237-.78,3.357,3.357,0,0,0,.809-1.2,4.881,4.881,0,0,0,.325-1.636c.032-.719.044-.948.044-2.783s-.008-2.06-.044-2.783a4.881,4.881,0,0,0-.325-1.636,3.306,3.306,0,0,0-.809-1.2,3.472,3.472,0,0,0-1.241-.78,5.335,5.335,0,0,0-1.7-.313c-.745-.034-.983-.042-2.882-.042Zm-.626,1.215h.626c1.867,0,2.089.008,2.826.038a4.055,4.055,0,0,1,1.3.233,2.185,2.185,0,0,1,.8.5,2.092,2.092,0,0,1,.523.776,3.647,3.647,0,0,1,.242,1.254c.032.711.04.925.04,2.725s-.008,2.014-.04,2.725a3.67,3.67,0,0,1-.242,1.254,2.092,2.092,0,0,1-.523.776,2.153,2.153,0,0,1-.8.5,4.029,4.029,0,0,1-1.3.233c-.737.031-.959.038-2.826.038s-2.089-.008-2.826-.038a4.054,4.054,0,0,1-1.3-.233,2.185,2.185,0,0,1-.8-.5,2.092,2.092,0,0,1-.523-.776,3.648,3.648,0,0,1-.242-1.254c-.032-.711-.04-.925-.04-2.725s.008-2.014.04-2.725a3.67,3.67,0,0,1,.242-1.254,2.092,2.092,0,0,1,.523-.776,2.184,2.184,0,0,1,.8-.5,4.03,4.03,0,0,1,1.3-.233c.646-.031.9-.038,2.2-.038Zm4.36,1.12a.826.826,0,0,0-.84.81.826.826,0,0,0,.84.81.826.826,0,0,0,.84-.81.826.826,0,0,0-.84-.81Zm-3.734.948a3.528,3.528,0,0,0-3.591,3.463,3.528,3.528,0,0,0,3.591,3.463,3.528,3.528,0,0,0,3.591-3.463,3.526,3.526,0,0,0-3.591-3.463Zm0,1.215a2.289,2.289,0,0,1,2.331,2.247,2.289,2.289,0,0,1-2.331,2.247,2.289,2.289,0,0,1-2.331-2.247A2.289,2.289,0,0,1-73.6,141Z" transform="translate(1635.6 -72.5)"/>
+                    </g>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="x">
+                        <g id="Group_521" data-name="Group 521" transform="translate(-1529 -82)">
+                          <rect id="Rectangle_161" data-name="Rectangle 161" width="16" height="16" transform="translate(1529 82)" fill="none"/>
+                          <path id="Path_2495" data-name="Path 2495" d="M8.725,5.172,13.561,0H11.724l-3.8,4.06L5.022,0H0L5.084,7.1,0,12.54H1.836L5.881,8.214l3.1,4.326H14ZM2.588,1.33H4.339l7.073,9.88H9.661Z" transform="translate(1530 84)"/>
+                        </g>
+                      </svg></a>
+                </li>
+                <li>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="youtube">
+  <g id="Group_520" data-name="Group 520" transform="translate(-1554 -82)">
+    <rect id="Rectangle_162" data-name="Rectangle 162" width="16" height="16" transform="translate(1554 82)" fill="none"/>
+    <path id="Path_2494" data-name="Path 2494" d="M972.232,20.031H961.921a1.845,1.845,0,0,0-1.845,1.844v6.449a1.844,1.844,0,0,0,1.845,1.844h10.311a1.844,1.844,0,0,0,1.844-1.844V21.875a1.845,1.845,0,0,0-1.844-1.844m-3.5,5.514-2.867,1.433a.5.5,0,0,1-.72-.444V23.667a.5.5,0,0,1,.72-.445l2.867,1.433a.5.5,0,0,1,0,.889" transform="translate(594.924 64.969)" />
+  </g>
+</svg>
+</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="uk-width-3-5@m">
+          <div class="uk-child-width-1-3@m" data-uk-grid>
+            <div>
+              <div class="uk-card uk-card-body uk-light">
+                <h3>Grojec24.net</h3>
+                <ul class="uk-nav uk-nav-default">
+                  <li class="uk-active"><a href="#">Samorząd</a></li>
+                  <li><a href="#">Policja</a></li>
+                  <li><a href="#">Na Sygnale</a></li>
+                  <li><a href="#">Grójecki Ośrodek Sportu</a></li>
+                  <li><a href="#">Biblioteka w Grójcu</a></li>
+                  <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
+                  <li><a href="#">Historia i zabytki</a></li>
+                  <li><a href="#">Kościół i religia</a></li>
+                  <li><a href="#">Grójczanie i ich pasje</a></li>
+                  <li><a href="#">Mazowsze Grójec</a></li>
+                  <li><a href="#">MKS Grójec</a></li>
+                  <li><a href="#">Nieruchomości Grójec</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-body uk-light">
+                <h3>Polecamy</h3>
+                <ul class="uk-nav uk-nav-default">
+                  <li><a href="#">Aktualności</a></li>
+                  <li><a href="#">Sport</a></li>
+                  <li><a href="#">Kultura</a></li>
+                  <li><a href="#">O Grójcu</a></li>
+                  <li><a href="#">Po godzinach</a></li>
+                  <li><a href="#">Grójec w obiektywie</a></li>
+                  <li><a href="#">TVGrójec24</a></li>
+                  <li><a href="#">Ogłoszenia</a></li>
+                  <li><a href="#">Praca</a></li>
+                  <li><a href="#">Alarm24</a></li>
+                  <li><a href="#">Reklama</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-body uk-light">
+                <h3>Informacje</h3>
+                <ul class="uk-nav uk-nav-default">
+                  <li><a href="#">Grójec</a></li>
+                  <li><a href="#">Powiat Grójecki</a></li>
+                  <li><a href="#">Belsk Duży</a></li>
+                  <li><a href="#">Błedów</a></li>
+                  <li><a href="#">Chynów</a></li>
+                  <li><a href="#">Goszczyn</a></li>
+                  <li><a href="#">Jasieniec</a></li>
+                  <li><a href="#">Mogielnica</a></li>
+                  <li><a href="#">Nowe Miasto nad Pilicą</a></li>
+                  <li><a href="#">Pniewy</a></li>
+                  <li><a href="#">Warka</a></li>
+                  <li><a href="#">Mazowsze</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright uk-section uk-padding-small">
+    <div class="uk-container uk-container-large uk-text-center">
+      &copy;2013 - &copy;2024
+      <span>
+        Grojec24.net - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego<br />
+        Wydawcą portalu jest - AaaMedia.pl Mateusz Adamski
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
