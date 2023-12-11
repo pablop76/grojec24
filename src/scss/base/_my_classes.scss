@@ -19,6 +19,10 @@
   .margin-remove-top-s {
     margin-top: 0 !important;
   }
+  .uk-card-title.font-size-aside-header-mobile{
+    font-size: 25px;
+    line-height: 28px;
+  }
 }
 
 .header-section-title-xl {
@@ -54,6 +58,7 @@
 .uk-category-article {
   color: $color-accent-2;
   font-size: 0.75rem;
+  line-height: .75rem;
   text-transform: uppercase;
   letter-spacing: 2.4px;
 }

@@ -50,6 +50,10 @@ h4.uk-comment-title {
   .margin-remove-top-s {
     margin-top: 0 !important;
   }
+  .uk-card-title.font-size-aside-header-mobile {
+    font-size: 25px;
+    line-height: 28px;
+  }
 }
 .header-section-title-xl {
   font-size: 40px;
@@ -92,6 +96,7 @@ h4.uk-comment-title {
 .uk-category-article {
   color: #2a81ac;
   font-size: 0.75rem;
+  line-height: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 2.4px;
 }
