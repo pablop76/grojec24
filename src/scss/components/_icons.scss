@@ -20,4 +20,14 @@
     fill:$color-footer-navbar
   }
 }
+.share-icon{
+  svg{
+    &#facebook:hover {
+      fill: $color-accent-2;
+    }
+    &#x:hover {
+      fill: $color-x;
+    }
+  }
+}
 

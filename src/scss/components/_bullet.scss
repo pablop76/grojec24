@@ -8,6 +8,11 @@
       border-left: calc(15px + 0.1em) solid $color-lightblue;
     }
   }
+  &.uk-heading-bullet-darktblue {
+    &::before {
+      border-left: calc(15px + 0.1em) solid $color-accent-2;
+    }
+  }
   &.uk-heading-bullet-only {
     &::before {
       border-left: calc(15px + 0.1em) solid $color-bullet-only;

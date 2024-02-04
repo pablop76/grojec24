@@ -1,0 +1,78 @@
+@@include('./particles/head.html',{ 'title':'artykuł', 'description':'Grojec24.net - największy portal informacyjny powiatu grójeckiego. Najnowsze informacje z gmin: Grójec, Belsk Duży, Błędów, Chynów, Goszczyn, Jasieniec, Mogielnica, Nowe Miasto nad Pilicą, Pniewy, Warka.' })
+<!-- sekcja topbar -->
+<div class="navbar-container-sticky" uk-sticky="start: 200; animation: uk-animation-slide-top; media:@m">
+  @@include('./particles/navbar.html')
+  <!-- sekcja mainbar -->
+  @@include('./particles/main-navbar.html',{'active':'uk-active'})
+</div>
+<!-- sekcja banner -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">@@include('./particles/banner-horizontal.html')</div>
+</div>
+<hr />
+<!-- content and aside grid -->
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-large">
+    <div class="uk-flex-first@s uk-grid-small uk-flex-center" data-uk-grid>
+      <div class="uk-width-3-4@s">
+        <!-- sekcja artykuł -->
+        @@include('./particles/single-article.html')       
+      </div>
+      <div><hr class="uk-divider-vertical uk-height-1-1" /></div>
+      <div class="uk-width-expand@m section-aside">
+        @@include('./particles/slider-aside.html')
+        <!-- sekcja tytuł aktualności -->
+        <div class="uk-section uk-padding-remove-left padding-top-title-seciton">
+          <div class="uk-container uk-container-large">
+            @@include('./particles/title-section-aside.html',{'title':'Popularne','background-bullet':'uk-heading-bullet-only'}) @@include('./particles/article-image-left-aside.html',{'category':'Kategoria','title':'25 latek z powiatu grójeckiego dał się namówić na sexting','imageName':'aside-1.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'Kultura','title':'Przerwa w grójeckim kinie. Później jeszcze lepsza jakość!','imageName':'aside-2.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'Kategoria','title':'Zderzenie trzech samochodów na wiadukcie Mogielnicka','imageName':'aside-3.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'O grójcu','title':'Nowy pomnik pod Grójcem. Upamiętnia tragedię sprzed 18 lat','imageName':'aside-4.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'Kategoria','title':'Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej','imageName':'aside-5.jpg'}) @@include('./particles/slider-aside.html') @@include('./particles/title-section-aside.html',{'title':'Najnowsze','background-bullet':'uk-heading-bullet-lightblue'}) @@include('./particles/article-image-left-aside.html',{'category':'Kultura','title':'Przerwa w grójeckim kinie. Później jeszcze lepsza jakość!','imageName':'aside-5.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'Kategoria','title':'Zderzenie trzech samochodów na wiadukcie Mogielnicka','imageName':'aside-6.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'O grójcu','title':'Nowy pomnik pod Grójcem. Upamiętnia tragedię sprzed 18 lat','imageName':'aside-7.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'Kategoria','title':'Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej','imageName':'aside-8.jpg'})
+            <hr />
+            @@include('./particles/article-image-left-aside.html',{'category':'Kategoria','title':'Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej','imageName':'aside-9.jpg'}) @@include('./particles/slider-aside.html') @@include('./particles/title-section-aside.html',{'title':'Ostatnie komentarze','background-bullet':'uk-heading-bullet-lightblue'}) @@include('./particles/comments-aside.html')
+            <hr />
+            @@include('./particles/comments-aside.html')
+            <hr />
+            @@include('./particles/comments-aside.html')
+            <hr />
+            @@include('./particles/comments-aside.html')
+            <hr />
+            @@include('./particles/comments-aside.html')
+            <hr />
+            @@include('./particles/comments-aside.html')
+            <hr />
+            @@include('./particles/comments-aside.html')
+            <br />
+            @@include('./particles/slider-aside.html') @@include('./particles/title-section-aside.html',{'title':'Ogłoszenia','background-bullet':'uk-heading-bullet'}) @@include('./particles/ogloszenia-image-left-aside.html',{'category':'Kultura','title':'Przerwa w grójeckim kinie. Później jeszcze lepsza jakość!','imageName':'ogloszenie-1.jpg','price':'100zł'})
+            <hr />
+            @@include('./particles/ogloszenia-image-left-aside.html',{'category':'Kategoria','title':'Zderzenie trzech samochodów na wiadukcie Mogielnicka','imageName':'ogloszenie-1.jpg','price':'200zł'})
+            <hr />
+            @@include('./particles/ogloszenia-image-left-aside.html',{'category':'O grójcu','title':'Nowy pomnik pod Grójcem. Upamiętnia tragedię sprzed 18 lat','imageName':'ogloszenie-1.jpg','price':'10zł'})
+            <hr />
+            @@include('./particles/ogloszenia-image-left-aside.html',{'category':'Kategoria','title':'Młody mieszkaniec Grójca wystąpił w filmie Kajtek Czarodziej','imageName':'ogloszenie-1.jpg','price':'60zł'})
+            <p class="uk-text-center" data-uk-margin>
+              <a href="#"
+                ><button class="uk-button uk-button-primary category-small uk-text-bold">Dodaj ogłoszenie <span uk-icon="arrow-up"></span></button
+              ></a>
+            </p>
+            @@include('./particles/slider-aside.html')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('./particles/back-to-top.html')
+<!-- sekcja footer -->
+@@include('./particles/footer.html')

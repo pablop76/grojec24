@@ -7,6 +7,11 @@
   background: rgba(5, 39, 56, 0.8);
 }
 
+img {
+  min-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -116,6 +121,10 @@ h4.uk-comment-title {
   font-family: "Unna", serif;
 }
 
+.background-accent-1 {
+  background-color: #f3f3f3;
+}
+
 .uk-logo {
   margin-top: 20px;
 }
@@ -161,6 +170,9 @@ hr.divider-fat {
 .uk-heading-bullet.uk-heading-bullet-lightblue::before {
   border-left: calc(15px + 0.1em) solid #9ee6ff;
 }
+.uk-heading-bullet.uk-heading-bullet-darktblue::before {
+  border-left: calc(15px + 0.1em) solid #2a81ac;
+}
 .uk-heading-bullet.uk-heading-bullet-only::before {
   border-left: calc(15px + 0.1em) solid #a8b8bf;
 }
@@ -201,6 +213,14 @@ hr.divider-fat {
   color: #2a81ac;
 }
 
+.button-submit {
+  background-color: #2a81ac;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
 .uk-list-arrow {
   list-style-image: url("../images/arrow_list_item.svg");
   padding-left: 10px;
@@ -224,6 +244,13 @@ hr.divider-fat {
 
 #navbar svg {
   fill: #939393;
+}
+
+.share-icon svg#facebook:hover {
+  fill: #2a81ac;
+}
+.share-icon svg#x:hover {
+  fill: #1da1f2;
 }
 
 .overlay-foto-video-icon div {
@@ -268,6 +295,27 @@ a.uk-link-text:hover {
 }
 .back-to-top:hover {
   color: #fff;
+}
+
+.tags-list {
+  display: flex;
+  margin-top: 15px;
+}
+.tags-list h4 {
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+.tags-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tags-list ul li {
+  margin-right: 15px;
 }
 
 #navbar {
