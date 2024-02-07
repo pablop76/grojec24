@@ -28,6 +28,30 @@
     &#x:hover {
       fill: $color-x;
     }
+    &#facebook-share {
+      fill: $color-footer-navbar;
+    }
+    &#facebook-share:hover {
+      fill: $color-accent-2;
+    }
+    &#x-share {
+      fill: $color-footer-navbar;
+    }
+    &#x-share:hover {
+      fill: $color-x;
+    }
+    &#envelope {
+      fill: $color-footer-navbar;
+    }
+    &#envelope:hover {
+      fill: $color-accent-2;
+    }
+    &#print {
+      fill: $color-footer-navbar;
+    }
+    &#print:hover {
+      fill: $color-accent-2;
+    }
   }
 }
 

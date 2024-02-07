@@ -12,6 +12,12 @@ img {
   height: auto;
 }
 
+i {
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #b1b1b1;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -252,6 +258,30 @@ hr.divider-fat {
 .share-icon svg#x:hover {
   fill: #1da1f2;
 }
+.share-icon svg#facebook-share {
+  fill: #939393;
+}
+.share-icon svg#facebook-share:hover {
+  fill: #2a81ac;
+}
+.share-icon svg#x-share {
+  fill: #939393;
+}
+.share-icon svg#x-share:hover {
+  fill: #1da1f2;
+}
+.share-icon svg#envelope {
+  fill: #939393;
+}
+.share-icon svg#envelope:hover {
+  fill: #2a81ac;
+}
+.share-icon svg#print {
+  fill: #939393;
+}
+.share-icon svg#print:hover {
+  fill: #2a81ac;
+}
 
 .overlay-foto-video-icon div {
   padding: 2px 5px;
@@ -316,6 +346,16 @@ a.uk-link-text:hover {
 }
 .tags-list ul li {
   margin-right: 15px;
+}
+.tags-list ul li:hover {
+  color: #2a81ac;
+  cursor: pointer;
+}
+
+blockquote {
+  padding: 30px;
+  background-color: #f3f3f3;
+  font-size: 15px;
 }
 
 #navbar {

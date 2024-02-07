@@ -15,6 +15,10 @@
     align-items: center;
     li {
       margin-right: 15px;
+      &:hover{
+        color:$color-accent-2;
+        cursor: pointer;
+      }
     }
   }
 }
