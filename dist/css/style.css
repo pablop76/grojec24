@@ -343,11 +343,13 @@ a.uk-link-text:hover {
 .tags-list {
   display: flex;
   margin-top: 15px;
+  font-size: 14px;
 }
 .tags-list h4 {
   margin: 0;
   padding: 0;
   margin-right: 15px;
+  font-size: 18px;
 }
 .tags-list ul {
   margin: 0;
