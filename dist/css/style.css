@@ -16,6 +16,7 @@ i {
   font-size: 0.75rem;
   letter-spacing: 1.2px;
   color: #b1b1b1;
+  font-style: normal;
 }
 
 body {
@@ -47,11 +48,9 @@ h4.uk-comment-title {
 }
 
 article {
-  font-size: 18px;
   color: #333333;
 }
 article blockquote {
-  font-size: 16px;
   font-style: normal;
 }
 
@@ -343,13 +342,11 @@ a.uk-link-text:hover {
 .tags-list {
   display: flex;
   margin-top: 15px;
-  font-size: 14px;
 }
 .tags-list h4 {
   margin: 0;
   padding: 0;
   margin-right: 15px;
-  font-size: 18px;
 }
 .tags-list ul {
   margin: 0;
