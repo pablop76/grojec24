@@ -501,6 +501,14 @@ blockquote {
      object-position: top center;
 }
 
+.article-content {
+  padding-top: 20px;
+  font-size: 16px;
+}
+.article-content blockquote {
+  font-size: 16px;
+}
+
 .uk-tab > .uk-active > a {
   color: #2a81ac;
   border-color: #2a81ac;
