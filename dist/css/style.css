@@ -47,13 +47,6 @@ h4.uk-comment-title {
   line-height: 20px;
 }
 
-article {
-  color: #333333;
-}
-article blockquote {
-  font-style: normal;
-}
-
 @media screen and (min-width: 639.9px) {
   .padding-remove-top-s {
     padding-top: 0 !important;
@@ -504,9 +497,11 @@ blockquote {
 .article-content {
   padding-top: 20px;
   font-size: 16px;
+  color: #333;
 }
 .article-content blockquote {
   font-size: 16px;
+  font-style: normal;
 }
 
 .uk-tab > .uk-active > a {
